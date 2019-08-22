@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd" schemaVersion="1.4">
+  <name>K32L3A60_DFP</name>
+  <vendor>NXP</vendor>
+  <description>Device Family Pack for K32L3A60</description>
+  <url>http://mcuxpresso.nxp.com/cmsis_pack/repo/</url>
+  <license>Licenses.txt</license>
+  <releases>
+    <release version="12.0.0" date="2019-08-16">NXP CMSIS packs based on MCUXpresso SDK 2.6.0</release>
+  </releases>
+  <keywords>
+    <keyword>Device Family Pack</keyword>
+  </keywords>
+  <taxonomy>
+    <description Cclass="Board Support" Cgroup="SDK Project Template">NXP MCUXpresso SDK Project Template</description>
+    <description Cclass="Device" Cgroup="SDK Project Template">NXP MCUXpresso SDK RTE Device Project Template</description>
+    <description Cclass="Device" Cgroup="SDK Drivers">NXP MCUXpresso SDK Peripheral Drivers</description>
+    <description Cclass="Device" Cgroup="SDK Utilities">NXP MCUXpresso SDK Utilities</description>
+    <description Cclass="Device" Cgroup="Startup">NXP MCUXpresso SDK Start up</description>
+    <description Cclass="CMSIS Driver">NXP MCUXpresso SDK Peripheral CMSIS Drivers</description>
+  </taxonomy>
+  <devices>
+    <family Dfamily="K32L3A60" Dvendor="NXP:11">
+      <description>The K32L3A60 are ARM Cortex-M4 and ARM Cortex-M0P based microcontrollers for embedded applications.</description>
+      <device Dname="K32L3A60xxx">
+        <processor Pname="cm0plus" Dcore="Cortex-M0+" Dfpu="NO_FPU" Dmpu="MPU" Dendian="Little-endian" Dclock="720000000"/>
+        <processor Pname="cm4" Dcore="Cortex-M4" Dfpu="SP_FPU" Dmpu="MPU" Dendian="Little-endian" Dclock="720000000"/>
+        <environment Pname="cm0plus" name="iar">
+          <file category="linkerfile" name="iar/K32L3A60xxx_cm0plus_flash.icf"/>
+        </environment>
+        <environment Pname="cm4" name="iar">
+          <file category="linkerfile" name="iar/K32L3A60xxx_cm4_flash.icf"/>
+        </environment>
+        <memory name="FLEX_RAM" start="0x48000000" size="0x1000" access="rw" default="1"/>
+        <memory name="PROGRAM_FLASH_cm0plus" start="0x01000000" size="0x040000" access="rx" default="1" startup="1"/>
+        <memory name="PROGRAM_FLASH_cm4" start="0x00000000" size="0x100000" access="rx" default="1"/>
+        <memory name="SRAM_DTC_cm4" start="0x20000000" size="0x030000" access="rw" default="1"/>
+        <memory name="SRAM_ITC_cm4" start="0x08000000" size="0x010000" access="rw" default="1"/>
+        <memory name="SRAM_TCM_cm0plus" start="0x09000000" size="0x020000" access="rw" default="1"/>
+        <memory name="USB_RAM" start="0x48010000" size="0x0800" access="rw" default="1"/>
+        <algorithm name="arm/K32L3A60_P1024_4KB_SEC.FLM" start="0x00000000" size="0x00100000" RAMstart="0x20000000" RAMsize="0x00002000" default="1"/>
+        <algorithm name="arm/K32L3A60_P256_2KB_SEC.FLM" start="0x01000000" size="0x00040000" RAMstart="0x20000000" RAMsize="0x00002000" default="1"/>
+        <debug svd="K32L3A60_cm0plus.xml" Pname="cm0plus"/>
+        <debug svd="K32L3A60_cm4.xml" Pname="cm4"/>
+        <variant Dvariant="K32L3A60VPJ1A">
+          <compile Pname="cm0plus" header="fsl_device_registers.h" define="CPU_K32L3A60VPJ1A_cm0plus"/>
+          <compile Pname="cm4" header="fsl_device_registers.h" define="CPU_K32L3A60VPJ1A_cm4"/>
+          <environment Pname="cm0plus" name="uv">
+            <CMisc>--C99</CMisc>
+            <LMisc>--scatter "./RTE/Device/K32L3A60VPJ1A_cm0p/K32L3A60xxx_cm0plus_flash.scf"</LMisc>
+          </environment>
+          <environment Pname="cm4" name="uv">
+            <CMisc>--C99</CMisc>
+            <LMisc>--scatter "./RTE/Device/K32L3A60VPJ1A_cm4/K32L3A60xxx_cm4_flash.scf"</LMisc>
+          </environment>
+        </variant>
+      </device>
+    </family>
+  </devices>
+  <conditions>
+    <condition id="cond_MCUXpressoConfigTools">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="CMSIS" Cgroup="CORE"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_component.lpuart_adapter_AND_component.serial_manager_uart_AND_device.K32L3A60_startup_AND_driver.clock_AND_driver.common_AND_driver.gpio_AND_driver.lpuart_AND_driver.msmc_AND_driver.port_AND_utility.assert_AND_utility.debug_console">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Utilities" Csub="assert"/>
+      <require Cclass="Device" Cgroup="SDK Utilities" Csub="debug_console"/>
+      <require Cclass="Device" Cgroup="SDK Utilities" Csub="serial_manager_uart"/>
+      <require Cclass="Device" Cgroup="Startup"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="common"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="clock"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="gpio"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="port"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart_adapter"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="msmc"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.dmamux_AND_driver.edma">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="edma"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="dmamux"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.common">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="common"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.common_AND_driver.lpuart">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="common"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_component.lists_AND_driver.common">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="common"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lists"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.lpuart">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart"/>
+    </condition>
+    <condition id="CMSIS_Include_core_cm0plus">
+      <require Cclass="CMSIS" Cgroup="CORE"/>
+    </condition>
+    <condition id="CMSIS_Include_core_cm4">
+      <require Cclass="CMSIS" Cgroup="CORE"/>
+    </condition>
+    <condition id="_CMSIS_Include_core_cm0plus__OR__CMSIS_Include_core_cm4_">
+      <accept condition="CMSIS_Include_core_cm0plus"/>
+      <accept condition="CMSIS_Include_core_cm4"/>
+    </condition>
+    <condition id="device.K32L3A60_AND__CMSIS_Include_core_cm0plus__OR__CMSIS_Include_core_cm4_">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require condition="_CMSIS_Include_core_cm0plus__OR__CMSIS_Include_core_cm4_"/>
+    </condition>
+    <condition id="core_type.cm0p_AND_mdk">
+      <require Tcompiler="ARMCC"/>
+      <require Dcore="Cortex-M0+" Dfpu="NO_FPU"/>
+    </condition>
+    <condition id="core_type.cm4f_AND_mdk">
+      <require Tcompiler="ARMCC"/>
+      <require Dcore="Cortex-M4" Dfpu="SP_FPU"/>
+    </condition>
+    <condition id="core_type.cm0p_AND_iar">
+      <require Tcompiler="IAR"/>
+      <require Dcore="Cortex-M0+" Dfpu="NO_FPU"/>
+    </condition>
+    <condition id="core_type.cm4f_AND_iar">
+      <require Tcompiler="IAR"/>
+      <require Dcore="Cortex-M4" Dfpu="SP_FPU"/>
+    </condition>
+    <condition id="core_type.cm0p">
+      <require Dcore="Cortex-M0+" Dfpu="NO_FPU"/>
+    </condition>
+    <condition id="core_type.cm4f">
+      <require Dcore="Cortex-M4" Dfpu="SP_FPU"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_core_type.cm0p_AND_driver.common">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Dcore="Cortex-M0+" Dfpu="NO_FPU"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="common"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_CMSIS_Driver_Include.I2C_AND_RTE_Device_AND_driver.lpi2c_edma">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="i2c_edma"/>
+      <require Cclass="CMSIS Driver" Cgroup="I2C" Capiversion="2.3.0"/>
+      <require Cclass="Device" Cgroup="SDK Project Template" Csub="RTE_Device"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_CMSIS_Driver_Include.SPI_AND_RTE_Device_AND_driver.lpspi_edma">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lpspi_edma"/>
+      <require Cclass="CMSIS Driver" Cgroup="SPI" Capiversion="2.2.0"/>
+      <require Cclass="Device" Cgroup="SDK Project Template" Csub="RTE_Device"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_CMSIS_Driver_Include.USART_AND_RTE_Device_AND_driver.lpuart_edma">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart_edma"/>
+      <require Cclass="CMSIS Driver" Cgroup="USART" Capiversion="2.3.0"/>
+      <require Cclass="Device" Cgroup="SDK Project Template" Csub="RTE_Device"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_device.K32L3A60_CMSIS_AND_driver.clock">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="clock"/>
+      <require Cclass="Device" Cgroup="Startup"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.flexio">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="flexio"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.edma_AND_driver.flexio_spi">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="edma"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_spi"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.edma_AND_driver.flexio_uart">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_uart"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="edma"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.edma_AND_driver.lpi2c">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="edma"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="i2c"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.edma_AND_driver.lpspi">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="edma"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lpspi"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.edma_AND_driver.lpuart">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="edma"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_driver.common_AND_driver.smartcard_emvsim">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="smartcard_emvsim"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="common"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_utility.debug_console">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Utilities" Csub="debug_console"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_component.serial_manager_AND_driver.common">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Utilities" Csub="serial_manager"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="common"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_component.lists_AND_driver.common_AND_utility.debug_console">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Cclass="Device" Cgroup="SDK Utilities" Csub="debug_console"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="lists"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="common"/>
+    </condition>
+    <condition id="device.K32L3A60_AND_core_type.cm4f_AND_driver.common">
+      <accept Dname="K32L3A60???*" Dvendor="NXP:11"/>
+      <require Dcore="Cortex-M4" Dfpu="SP_FPU"/>
+      <require Cclass="Device" Cgroup="SDK Drivers" Csub="common"/>
+    </condition>
+  </conditions>
+  <components>
+    <component Cclass="Board Support" Cgroup="SDK Project Template" Csub="project_template" Cvariant="K32L3A60" Cversion="1.0.0" condition="device.K32L3A60_AND_component.lpuart_adapter_AND_component.serial_manager_uart_AND_device.K32L3A60_startup_AND_driver.clock_AND_driver.common_AND_driver.gpio_AND_driver.lpuart_AND_driver.msmc_AND_driver.port_AND_utility.assert_AND_utility.debug_console" isDefaultVariant="1">
+      <description/>
+      <files>
+        <file category="sourceC" attr="config" name="project_template/board.c"/>
+        <file category="header" attr="config" name="project_template/board.h"/>
+        <file category="sourceC" attr="config" name="project_template/clock_config.c"/>
+        <file category="header" attr="config" name="project_template/clock_config.h"/>
+        <file category="sourceC" attr="config" name="project_template/peripherals.c"/>
+        <file category="header" attr="config" name="project_template/peripherals.h"/>
+        <file category="sourceC" attr="config" name="project_template/pin_mux.c"/>
+        <file category="header" attr="config" name="project_template/pin_mux.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Project Template" Csub="RTE_Device" Cversion="1.0.0" condition="device.K32L3A60_AND_driver.dmamux_AND_driver.edma">
+      <description/>
+      <files>
+        <file category="header" attr="config" name="template/RTE_Device.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lists" Cversion="1.0.0" condition="device.K32L3A60_AND_driver.common">
+      <description/>
+      <files>
+        <file category="sourceC" name="components/lists/generic_list.c"/>
+        <file category="header" name="components/lists/generic_list.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart_adapter" Cversion="1.0.0" condition="device.K32L3A60_AND_driver.common_AND_driver.lpuart">
+      <description/>
+      <files>
+        <file category="sourceC" name="components/uart/lpuart_adapter.c"/>
+        <file category="header" name="components/uart/uart.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Utilities" Csub="serial_manager" Cversion="1.0.0" condition="device.K32L3A60_AND_component.lists_AND_driver.common">
+      <description/>
+      <files>
+        <file category="sourceC" name="components/serial_manager/serial_manager.c"/>
+        <file category="header" name="components/serial_manager/serial_manager.h"/>
+        <file category="header" name="components/serial_manager/serial_port_internal.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Utilities" Csub="serial_manager_uart" Cversion="1.0.0" condition="device.K32L3A60_AND_driver.lpuart">
+      <description/>
+      <files>
+        <file category="sourceC" name="components/serial_manager/serial_port_uart.c"/>
+        <file category="header" name="components/serial_manager/serial_port_uart.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="device.K32L3A60_AND__CMSIS_Include_core_cm0plus__OR__CMSIS_Include_core_cm4_">
+      <description/>
+      <files>
+        <file condition="core_type.cm0p_AND_mdk" category="sourceAsm" attr="config" name="arm/startup_K32L3A60_cm0plus.s"/>
+        <file condition="core_type.cm4f_AND_mdk" category="sourceAsm" attr="config" name="arm/startup_K32L3A60_cm4.s"/>
+        <file condition="core_type.cm0p_AND_iar" category="sourceAsm" attr="config" name="iar/startup_K32L3A60_cm0plus.s"/>
+        <file condition="core_type.cm4f_AND_iar" category="sourceAsm" attr="config" name="iar/startup_K32L3A60_cm4.s"/>
+        <file condition="core_type.cm0p_AND_mdk" category="linkerScript" attr="config" name="arm/K32L3A60xxx_cm0plus_flash.scf"/>
+        <file condition="core_type.cm0p_AND_mdk" category="linkerScript" attr="config" name="arm/K32L3A60xxx_cm0plus_ram.scf"/>
+        <file condition="core_type.cm4f_AND_mdk" category="linkerScript" attr="config" name="arm/K32L3A60xxx_cm4_flash.scf"/>
+        <file condition="core_type.cm4f_AND_mdk" category="linkerScript" attr="config" name="arm/K32L3A60xxx_cm4_ram.scf"/>
+        <file condition="core_type.cm0p_AND_iar" category="linkerScript" attr="config" name="iar/K32L3A60xxx_cm0plus_flash.icf"/>
+        <file condition="core_type.cm0p_AND_iar" category="linkerScript" attr="config" name="iar/K32L3A60xxx_cm0plus_ram.icf"/>
+        <file condition="core_type.cm4f_AND_iar" category="linkerScript" attr="config" name="iar/K32L3A60xxx_cm4_flash.icf"/>
+        <file condition="core_type.cm4f_AND_iar" category="linkerScript" attr="config" name="iar/K32L3A60xxx_cm4_ram.icf"/>
+        <file condition="core_type.cm0p" category="header" attr="config" name="K32L3A60_cm0plus.h"/>
+        <file condition="core_type.cm0p" category="header" attr="config" name="K32L3A60_cm0plus_features.h"/>
+        <file condition="core_type.cm4f" category="header" attr="config" name="K32L3A60_cm4.h"/>
+        <file condition="core_type.cm4f" category="header" attr="config" name="K32L3A60_cm4_features.h"/>
+        <file category="header" attr="config" name="fsl_device_registers.h"/>
+        <file condition="core_type.cm0p" category="sourceC" attr="config" name="system_K32L3A60_cm0plus.c"/>
+        <file condition="core_type.cm0p" category="header" attr="config" name="system_K32L3A60_cm0plus.h"/>
+        <file condition="core_type.cm4f" category="sourceC" attr="config" name="system_K32L3A60_cm4.c"/>
+        <file condition="core_type.cm4f" category="header" attr="config" name="system_K32L3A60_cm4.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="cache_lplmem" Cversion="2.1.0" condition="device.K32L3A60_AND_core_type.cm0p_AND_driver.common">
+      <description>CACHE Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/cm0plus/fsl_cache.c"/>
+        <file category="header" name="drivers/cm0plus/fsl_cache.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="cau3" Cversion="2.0.2" condition="device.K32L3A60_AND_driver.common">
+      <description>CAU3 Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_cau3.c"/>
+        <file category="header" name="drivers/fsl_cau3.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="clock" Cversion="2.1.0" condition="device.K32L3A60_AND_driver.common">
+      <description>Clock Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_clock.c"/>
+        <file category="header" name="drivers/fsl_clock.h"/>
+      </files>
+    </component>
+    <component Cclass="CMSIS Driver" Cgroup="I2C" Csub="lpi2c_cmsis" Cversion="2.0.0" condition="device.K32L3A60_AND_CMSIS_Driver_Include.I2C_AND_RTE_Device_AND_driver.lpi2c_edma">
+      <description>LPI2C CMSIS Driver</description>
+      <files>
+        <file category="sourceC" name="cmsis_drivers/fsl_lpi2c_cmsis.c"/>
+        <file category="header" name="cmsis_drivers/fsl_lpi2c_cmsis.h"/>
+      </files>
+    </component>
+    <component Cclass="CMSIS Driver" Cgroup="SPI" Csub="lpspi_cmsis" Cversion="2.0.0" condition="device.K32L3A60_AND_CMSIS_Driver_Include.SPI_AND_RTE_Device_AND_driver.lpspi_edma">
+      <description>LPSPI CMSIS Driver</description>
+      <files>
+        <file category="sourceC" name="cmsis_drivers/fsl_lpspi_cmsis.c"/>
+        <file category="header" name="cmsis_drivers/fsl_lpspi_cmsis.h"/>
+      </files>
+    </component>
+    <component Cclass="CMSIS Driver" Cgroup="USART" Csub="lpuart_cmsis_edma" Cversion="2.0.1" condition="device.K32L3A60_AND_CMSIS_Driver_Include.USART_AND_RTE_Device_AND_driver.lpuart_edma">
+      <description>LPUART CMSIS Driver</description>
+      <files>
+        <file category="sourceC" name="cmsis_drivers/fsl_lpuart_cmsis.c"/>
+        <file category="header" name="cmsis_drivers/fsl_lpuart_cmsis.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="common" Cversion="2.1.3" condition="device.K32L3A60_AND_device.K32L3A60_CMSIS_AND_driver.clock">
+      <description>COMMON Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_common.c"/>
+        <file category="header" name="drivers/fsl_common.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="crc" Cversion="2.0.1" condition="device.K32L3A60_AND_driver.common">
+      <description>CRC Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_crc.c"/>
+        <file category="header" name="drivers/fsl_crc.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="dac" Cversion="2.0.1" condition="device.K32L3A60_AND_driver.common">
+      <description>DAC Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_dac.c"/>
+        <file category="header" name="drivers/fsl_dac.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="dmamux" Cversion="2.0.2" condition="device.K32L3A60_AND_driver.common">
+      <description>DMAMUX Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_dmamux.c"/>
+        <file category="header" name="drivers/fsl_dmamux.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="edma" Cversion="2.1.9" condition="device.K32L3A60_AND_driver.common">
+      <description>EDMA Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_edma.c"/>
+        <file category="header" name="drivers/fsl_edma.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="ewm" Cversion="2.0.1" condition="device.K32L3A60_AND_driver.common">
+      <description>EWM Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_ewm.c"/>
+        <file category="header" name="drivers/fsl_ewm.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flash" Cversion="3.0.0" condition="device.K32L3A60_AND_driver.common">
+      <description>Flash Driver</description>
+      <files>
+        <file category="header" name="drivers/fsl_flash.h"/>
+        <file category="header" name="drivers/fsl_ftfx_adapter.h"/>
+        <file category="sourceC" name="drivers/fsl_ftfx_cache.c"/>
+        <file category="header" name="drivers/fsl_ftfx_cache.h"/>
+        <file category="sourceC" name="drivers/fsl_ftfx_controller.c"/>
+        <file category="header" name="drivers/fsl_ftfx_controller.h"/>
+        <file category="header" name="drivers/fsl_ftfx_features.h"/>
+        <file category="sourceC" name="drivers/fsl_ftfx_flash.c"/>
+        <file category="header" name="drivers/fsl_ftfx_flash.h"/>
+        <file category="sourceC" name="drivers/fsl_ftfx_flexnvm.c"/>
+        <file category="header" name="drivers/fsl_ftfx_flexnvm.h"/>
+        <file category="header" name="drivers/fsl_ftfx_utilities.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexbus" Cversion="2.1.0" condition="device.K32L3A60_AND_driver.common">
+      <description>FLEXBUS Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_flexbus.c"/>
+        <file category="header" name="drivers/fsl_flexbus.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio" Cversion="2.0.2" condition="device.K32L3A60_AND_driver.common">
+      <description>FLEXIO Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_flexio.c"/>
+        <file category="header" name="drivers/fsl_flexio.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_i2c_master" Cversion="2.1.7" condition="device.K32L3A60_AND_driver.flexio">
+      <description>FLEXIO I2C Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_flexio_i2c_master.c"/>
+        <file category="header" name="drivers/fsl_flexio_i2c_master.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_spi" Cversion="2.1.3" condition="device.K32L3A60_AND_driver.flexio">
+      <description>FLEXIO SPI Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_flexio_spi.c"/>
+        <file category="header" name="drivers/fsl_flexio_spi.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_spi_edma" Cversion="2.1.3" condition="device.K32L3A60_AND_driver.edma_AND_driver.flexio_spi">
+      <description>FLEXIO SPI EDMA Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_flexio_spi_edma.c"/>
+        <file category="header" name="drivers/fsl_flexio_spi_edma.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_uart" Cversion="2.1.5" condition="device.K32L3A60_AND_driver.flexio">
+      <description>FLEXIO UART Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_flexio_uart.c"/>
+        <file category="header" name="drivers/fsl_flexio_uart.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="flexio_uart_edma" Cversion="2.1.5" condition="device.K32L3A60_AND_driver.edma_AND_driver.flexio_uart">
+      <description>FLEXIO UART EDMA Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_flexio_uart_edma.c"/>
+        <file category="header" name="drivers/fsl_flexio_uart_edma.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="fxos8700cq" Cversion="1.0.0" condition="device.K32L3A60_AND_driver.common">
+      <description/>
+      <files>
+        <file category="sourceC" name="components/fxos8700cq/fsl_fxos.c"/>
+        <file category="header" name="components/fxos8700cq/fsl_fxos.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="gpio" Cversion="2.4.0" condition="device.K32L3A60_AND_driver.common">
+      <description>GPIO Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_gpio.c"/>
+        <file category="header" name="drivers/fsl_gpio.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="intmux" Cversion="2.0.1" condition="device.K32L3A60_AND_core_type.cm0p_AND_driver.common">
+      <description>INTMUX Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_intmux.c"/>
+        <file category="header" name="drivers/fsl_intmux.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="llwu" Cversion="2.0.3" condition="device.K32L3A60_AND_driver.common">
+      <description>LLWU Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_llwu.c"/>
+        <file category="header" name="drivers/fsl_llwu.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpadc" Cversion="2.1.1" condition="device.K32L3A60_AND_driver.common">
+      <description>LPADC Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lpadc.c"/>
+        <file category="header" name="drivers/fsl_lpadc.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpcmp" Cversion="2.0.1" condition="device.K32L3A60_AND_driver.common">
+      <description>LPCMP Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lpcmp.c"/>
+        <file category="header" name="drivers/fsl_lpcmp.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="i2c" Cversion="2.1.10" condition="device.K32L3A60_AND_driver.common">
+      <description>LPI2C Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lpi2c.c"/>
+        <file category="header" name="drivers/fsl_lpi2c.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="i2c_edma" Cversion="2.1.6" condition="device.K32L3A60_AND_driver.edma_AND_driver.lpi2c">
+      <description>LPI2C Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lpi2c_edma.c"/>
+        <file category="header" name="drivers/fsl_lpi2c_edma.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpit" Cversion="2.0.0" condition="device.K32L3A60_AND_driver.common">
+      <description>LPIT Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lpit.c"/>
+        <file category="header" name="drivers/fsl_lpit.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpspi" Cversion="2.0.4" condition="device.K32L3A60_AND_driver.common">
+      <description>LPSPI Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lpspi.c"/>
+        <file category="header" name="drivers/fsl_lpspi.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpspi_edma" Cversion="2.0.4" condition="device.K32L3A60_AND_driver.edma_AND_driver.lpspi">
+      <description>LPSPI Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lpspi_edma.c"/>
+        <file category="header" name="drivers/fsl_lpspi_edma.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lptmr" Cversion="2.1.0" condition="device.K32L3A60_AND_driver.common">
+      <description>LPTMR Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lptmr.c"/>
+        <file category="header" name="drivers/fsl_lptmr.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart" Cversion="2.2.7" condition="device.K32L3A60_AND_driver.common">
+      <description>LPUART Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lpuart.c"/>
+        <file category="header" name="drivers/fsl_lpuart.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart_edma" Cversion="2.2.7" condition="device.K32L3A60_AND_driver.edma_AND_driver.lpuart">
+      <description>LPUART Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_lpuart_edma.c"/>
+        <file category="header" name="drivers/fsl_lpuart_edma.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="mmdvsq" Cversion="2.0.2" condition="device.K32L3A60_AND_core_type.cm0p_AND_driver.common">
+      <description>MMDVSQ Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_mmdvsq.c"/>
+        <file category="header" name="drivers/fsl_mmdvsq.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="msmc" Cversion="2.1.0" condition="device.K32L3A60_AND_driver.common">
+      <description>MSMC Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_msmc.c"/>
+        <file category="header" name="drivers/fsl_msmc.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="mu" Cversion="2.0.2" condition="device.K32L3A60_AND_driver.common">
+      <description>MU Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_mu.c"/>
+        <file category="header" name="drivers/fsl_mu.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="port" Cversion="2.1.0" condition="device.K32L3A60_AND_driver.common">
+      <description>PORT Driver</description>
+      <files>
+        <file category="header" name="drivers/fsl_port.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="rtc" Cversion="2.2.0" condition="device.K32L3A60_AND_driver.common">
+      <description>RTC Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_rtc.c"/>
+        <file category="header" name="drivers/fsl_rtc.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="sai" Cversion="2.2.1" condition="device.K32L3A60_AND_driver.common">
+      <description>SAI Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_sai.c"/>
+        <file category="header" name="drivers/fsl_sai.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="sema42" Cversion="2.0.0" condition="device.K32L3A60_AND_driver.common">
+      <description>SEMA42 Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_sema42.c"/>
+        <file category="header" name="drivers/fsl_sema42.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="sim" Cversion="2.1.0" condition="device.K32L3A60_AND_driver.common">
+      <description>SIM Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_sim.c"/>
+        <file category="header" name="drivers/fsl_sim.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="smartcard_emvsim" Cversion="2.2.0" condition="device.K32L3A60_AND_driver.common">
+      <description>SMARTCARD EMVSIM Driver</description>
+      <files>
+        <file category="header" name="drivers/fsl_smartcard.h"/>
+        <file category="sourceC" name="drivers/fsl_smartcard_emvsim.c"/>
+        <file category="header" name="drivers/fsl_smartcard_emvsim.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="smartcard_phy_emvsim" Cversion="2.2.0" condition="device.K32L3A60_AND_driver.common_AND_driver.smartcard_emvsim">
+      <description>SMARTCARD PHY EMVSIM, use only one SMARTCARD PHY in the project</description>
+      <files>
+        <file category="header" name="drivers/fsl_smartcard_phy.h"/>
+        <file category="sourceC" name="drivers/fsl_smartcard_phy_emvsim.c"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="spm" Cversion="2.2.0" condition="device.K32L3A60_AND_driver.common">
+      <description>SPM Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_spm.c"/>
+        <file category="header" name="drivers/fsl_spm.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="tpm" Cversion="2.0.5" condition="device.K32L3A60_AND_driver.common">
+      <description>TPM Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_tpm.c"/>
+        <file category="header" name="drivers/fsl_tpm.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="trgmux" Cversion="2.0.0" condition="device.K32L3A60_AND_driver.common">
+      <description>TRGMUX Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_trgmux.c"/>
+        <file category="header" name="drivers/fsl_trgmux.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="trng" Cversion="2.0.4" condition="device.K32L3A60_AND_driver.common">
+      <description>TRNG Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_trng.c"/>
+        <file category="header" name="drivers/fsl_trng.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="tstmr" Cversion="2.0.0" condition="device.K32L3A60_AND_driver.common">
+      <description>TSTMR Driver</description>
+      <files>
+        <file category="header" name="drivers/fsl_tstmr.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="sdhc" Cversion="2.3.0" condition="device.K32L3A60_AND_driver.common">
+      <description>USDHC Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_usdhc.c"/>
+        <file category="header" name="drivers/fsl_usdhc.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="vref" Cversion="2.1.1" condition="device.K32L3A60_AND_driver.common">
+      <description>VREF Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_vref.c"/>
+        <file category="header" name="drivers/fsl_vref.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="wdog" Cversion="2.0.1" condition="device.K32L3A60_AND_driver.common">
+      <description>WDOG32 Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_wdog32.c"/>
+        <file category="header" name="drivers/fsl_wdog32.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="xrdc" Cversion="2.0.3" condition="device.K32L3A60_AND_driver.common">
+      <description>XRDC Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/fsl_xrdc.c"/>
+        <file category="header" name="drivers/fsl_xrdc.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Utilities" Csub="assert" Cversion="1.0.0" condition="device.K32L3A60_AND_utility.debug_console">
+      <description/>
+      <files>
+        <file category="sourceC" name="utilities/fsl_assert.c"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Utilities" Csub="debug_console" Cversion="1.0.0" condition="device.K32L3A60_AND_component.serial_manager_AND_driver.common">
+      <description/>
+      <files>
+        <file category="sourceC" name="utilities/debug_console/fsl_debug_console.c"/>
+        <file category="header" name="utilities/debug_console/fsl_debug_console.h"/>
+        <file category="header" name="utilities/debug_console/fsl_debug_console_conf.h"/>
+        <file category="sourceC" name="utilities/str/fsl_str.c"/>
+        <file category="header" name="utilities/str/fsl_str.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Utilities" Csub="notifier" Cversion="1.0.0" condition="device.K32L3A60_AND_driver.common">
+      <description/>
+      <files>
+        <file category="sourceC" name="utilities/fsl_notifier.c"/>
+        <file category="header" name="utilities/fsl_notifier.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Utilities" Csub="shell" Cversion="1.0.0" condition="device.K32L3A60_AND_component.lists_AND_driver.common_AND_utility.debug_console">
+      <description/>
+      <files>
+        <file category="sourceC" name="utilities/fsl_shell.c"/>
+        <file category="header" name="utilities/fsl_shell.h"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="SDK Drivers" Csub="cache_lpcac" Cversion="2.1.0" condition="device.K32L3A60_AND_core_type.cm4f_AND_driver.common">
+      <description>CACHE Driver</description>
+      <files>
+        <file category="sourceC" name="drivers/cm4/fsl_cache.c"/>
+        <file category="header" name="drivers/cm4/fsl_cache.h"/>
+      </files>
+    </component>
+  </components>
+</package>

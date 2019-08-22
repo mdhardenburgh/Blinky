@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  <vendor>APEXMIC</vendor>
+  <name>APM32F1xx_DFP</name>
+  <description>APEX Microelectronics APM32F1 Series Device Support, Drivers and Examples</description>
+  <url>https://v1.cecdn.yun300.cn/site_1807300217/</url>
+  
+  <releases>
+    <release version="1.0.0" date="2019-04-30">
+      First Release version of APM32F1 Device Family Pack.
+    </release>
+  </releases>
+
+  <keywords>
+    <!-- keywords for indexing -->
+    <keyword>APEX</keyword>
+    <keyword>Device Support</keyword>
+    <keyword>Device Family Package APEX Microelectronics</keyword>
+    <keyword>APM32F1</keyword>
+    <keyword>APM32</keyword>
+  </keywords>
+
+<devices>
+    <family Dfamily="APM32F1 Series" Dvendor="APEXMIC:153">
+      <processor Dcore="Cortex-M3" DcoreVersion="r1p1"/>
+      <book name="Documents/dui0552a_cortex_m3_dgug.pdf" title="Cortex-M3 Generic User Guide"/>
+      <description>
+APEX Microelectronics' APM32F1 series of mainstream MCUs are 32-bit microprocessors based on ARM Cortex'-M3 core, with a maximum operating frequency of 72MHz. Built-in AHB high-performance bus, combined with high-speed memory and DMA, can achieve rapid data processing and storage. Built-in APB advanced peripheral bus extends the rich peripherals and enhanced I/O, guarantees the rapidity of connection and flexibility of control. The chip is equipped with powerful FPU floating-point processing unit, which supports single-precision data processing instructions and data types. 
+        </description>
+      <!-- ************************  Subfamily 'APM32F103'  **************************** -->
+      <subFamily DsubFamily="APM32F103">
+        <feature type="USBD" n="1"/>
+        <feature type="CAN" n="1"/>
+
+      <!-- *************************  Device 'APM32F103VB'  ***************************** -->
+      <device Dname="APM32F103VB">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        <memory id="IROM1" start="0x08000000" size="0x20000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x5000" init="0" default="1"/>
+        
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="100"/>
+        <feature type="BGA" n="100"/>
+      </device><!-- *************************  Device 'APM32F103V8'  ***************************** --><device Dname="APM32F103V8">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x10000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x5000" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="100"/>
+        <feature type="BGA" n="100"/>
+      </device><!-- *************************  Device 'APM32F103RB'  ***************************** --><device Dname="APM32F103RB">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD "/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x20000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x5000" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="64"/>
+        <feature type="BGA" n="64"/>
+      </device><!-- *************************  Device 'APM32F103R8'  ***************************** --><device Dname="APM32F103R8">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x10000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x5000" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="64"/>
+        <feature type="BGA" n="64"/>
+      </device><!-- *************************  Device 'APM32F103R6'  ***************************** --><device Dname="APM32F103R6">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x8000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x2800" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="64"/>
+        <feature type="BGA" n="64"/>
+      </device><!-- *************************  Device 'APM32F103R4'  ***************************** --><device Dname="APM32F103R4">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_LD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x4000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x1000" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_16.FLM" start="0x08000000" size="0x40000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="64"/>
+        <feature type="BGA" n="64"/>
+      </device><!-- *************************  Device 'APM32F103CB'  ***************************** --><device Dname="APM32F103CB">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x20000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x5000" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="48"/>
+        <feature type="BGA" n="48"/>
+      </device><!-- *************************  Device 'APM32F103C8'  ***************************** --><device Dname="APM32F103C8">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x10000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x5000" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="48"/>
+        <feature type="BGA" n="48"/>
+      </device><!-- *************************  Device 'APM32F103C6'  ***************************** --><device Dname="APM32F103C6">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x8000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x2800" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="48"/>
+        <feature type="BGA" n="48"/>
+      </device><!-- *************************  Device 'APM32F103C4'  ***************************** --><device Dname="APM32F103C4">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_LD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x4000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x1800" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_16.FLM" start="0x08000000" size="0x40000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="48"/>
+        <feature type="BGA" n="48"/>
+      </device><!-- *************************  Device 'APM32F103TB'  ***************************** --><device Dname="APM32F103TB">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x20000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x5000" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="32"/>
+        <feature type="BGA" n="32"/>
+      </device><!-- *************************  Device 'APM32F103T8'  ***************************** --><device Dname="APM32F103T8">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x10000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x5000" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="32"/>
+        <feature type="BGA" n="32"/>
+      </device><!-- *************************  Device 'APM32F103T6'  ***************************** --><device Dname="APM32F103T6">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_MD"/>
+		<debug svd="SVD/APM32F103xx.svd"/>
+        
+        <memory id="IROM1" start="0x08000000" size="0x8000" startup="1" default="1"/><memory id="IRAM1" start="0x20000000" size="0x2800" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x20000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="32"/>
+        <feature type="BGA" n="32"/>
+      </device>
+        <!-- *************************  Device 'APM32F103T4'  ***************************** -->
+        <device Dname="APM32F103T4">
+        <processor Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="72000000"/>
+        <compile header="Device/Include/apm32f10x.h" define="APM32F10X_LD"/>
+		    <debug svd="SVD/APM32F103xx.svd"/>
+        <memory id="IROM1" start="0x08000000" size="0x4000" startup="1" default="1"/>
+          <memory id="IRAM1" start="0x20000000" size="0x1800" init="0" default="1"/>
+        <algorithm name="Flash/APM32F10x_128.FLM" start="0x08000000" size="0x40000" default="1"/>
+        <book name="Documents/APM32F103x4x6x8xb_APM32E103xB_DS_V1.0.0.pdf" title="APM32F103 Data Sheet"/>
+        <feature type="Timer" n="4" m="16"/>
+        <feature type="ADC" n="16" m="12"/>
+        <feature type="IOs" n="80"/>
+        <feature type="SPI" n="2" m="18000000"/>
+        <feature type="I2C" n="2"/>
+        <feature type="USART" n="3" m="4500000"/>
+        <feature type="QFP" n="32"/>
+        <feature type="BGA" n="32"/>
+      </device>
+      </subFamily>
+    </family>
+  </devices>
+
+ <conditions>
+    <!-- conditions selecting Compiler -->
+    <condition id="Compiler ARMCC">
+      <require Tcompiler="ARMCC"/>
+    </condition>
+
+    <condition id="APM32F1xx">
+      <description>APEX Microelectronics APM32F1xx Device</description>
+      <require Dvendor="APEXMIC:153" Dname="APM32F1*"/>
+    </condition>
+
+   <condition id="APM32F1xx LD">
+      <description>APEX Microelectronics APM32F1xx Low Density Device</description>
+      <require Dvendor="APEXMIC:153" Dname="APM32F10[123]?[46]"/>
+    </condition>
+   <condition id="APM32F1xx MD">
+      <description>APEX Microelectronics APM32F1xx Mid Density Device</description>
+      <require Dvendor="APEXMIC:153" Dname="APM32F10[123]?[8B]"/>
+    </condition>
+
+   <condition id="APM32F1xx LD ARMCC">
+      <description>filter for APM32F1xx Low Density Device and the ARM compiler</description>
+      <require condition="APM32F1xx LD"/>
+      <require Tcompiler="ARMCC"/>
+    </condition>
+   <condition id="APM32F1xx MD ARMCC">
+      <description>filter for APM32F1xx Mid Density Device and the ARM compiler</description>
+      <require condition="APM32F1xx MD"/>
+      <require Tcompiler="ARMCC"/>
+    </condition>
+    
+    <condition id="APM32F1xx CMSIS">
+      <description>APEX Microelectronics APM32F1xx Device with CMSIS</description>
+      <require condition="APM32F1xx"/>
+      <require Cclass="CMSIS" Cgroup="CORE"/>
+    </condition>
+    <condition id="APM32F1xx STDPERIPH">
+      <description>APEX Microelectronics APM32F1xx with Standard Peripherals Drivers Framework</description>
+      <require condition="APM32F1xx CMSIS"/>
+      <require Cclass="Device" Cgroup="StdPeriph Drivers" Csub="Framework"/>
+    </condition>
+    <condition id="APM32F1xx STDPERIPH RCC">
+      <description>APEX Microelectronics APM32F1xx with Standard Peripherals Drivers Framework and RCC</description>
+      <require condition="APM32F1xx CMSIS"/>
+      <require Cclass="Device" Cgroup="StdPeriph Drivers" Csub="Framework"/>
+      <require Cclass="Device" Cgroup="StdPeriph Drivers" Csub="RCC"/>
+    </condition>
+  </conditions>
+
+ <components>
+    <component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="APM32F1xx CMSIS">
+      <description>System Startup for APEX Microelectronics APM32F1xx device series</description>
+      <files>
+        <!--  include folder -->
+        <file category="include" name="Device/Include/"/>
+        
+        <file category="source" name="Device/Source/ARM/startup_apm32f10x_ld.s" attr="config" version="1.0.0" condition="APM32F1xx LD ARMCC"/>
+        <file category="source" name="Device/Source/ARM/startup_apm32f10x_md.s" attr="config" version="1.0.0" condition="APM32F1xx MD ARMCC"/>
+
+        <!-- system file -->
+        <file category="source" name="Device/Source/system_apm32f10x.c" attr="config" version="1.0.0"/>
+        <!-- device configuration required by drivers at the moment -->
+      </files>
+    </component>
+
+    <!-- START: APEX Microelectronics Standard Peripherals Drivers -->
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="Framework" Cversion="1.0.0" condition="APM32F1xx STDPERIPH">
+      <description>Standard Peripherals Drivers Framework</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_FRAMEWORK
+      </RTE_Components_h>
+      <files>
+        <file category="include" name="Device/StdPeriph_Driver/inc/"/>
+        <file category="header" name="Device/StdPeriph_Driver/inc/misc.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/misc.c"/>
+        <file category="source" name="Device/StdPeriph_Driver/templates/apm32f10x_conf.h" attr="config" version="1.0.0"/>
+        <file category="header" name="Device/StdPeriph_Driver/templates/apm32f10x_it.h" attr="template" select="Interrupt Service Routines"/>
+        <file category="source" name="Device/StdPeriph_Driver/templates/apm32f10x_it.c" attr="template" select="Interrupt Service Routines"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="ADC" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>Analog-to-digital converter (ADC) driver for APM32F10x</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_ADC
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_adc.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_adc.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="BKP" Cversion="1.0.0" condition="APM32F1xx STDPERIPH">
+      <description>Backup registers (BKP) driver for APM32F10x</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_BKP
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_bkp.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_bkp.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="CAN" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>Controller area network (CAN) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_CAN
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_can.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_can.c"/>
+      </files>
+    </component>
+
+    
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="CRC" Cversion="1.0.0" condition="APM32F1xx STDPERIPH ">
+      <description>CRC calculation unit (CRC) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_CRC
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_crc.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_crc.c"/>
+      </files>
+    </component>
+
+    
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="DBGMCU" Cversion="1.0.0" condition="APM32F1xx STDPERIPH">
+      <description>MCU debug component (DBGMCU) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_DBGMCU
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_dbgmcu.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_dbgmcu.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="DMA" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>DMA controller (DMA) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_DMA
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_dma.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_dma.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="EXTI" Cversion="1.0.0" condition="APM32F1xx STDPERIPH">
+      <description>External interrupt/event controller (EXTI) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_EXTI
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_exti.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_exti.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="Flash" Cversion="1.0.0" condition="APM32F1xx STDPERIPH">
+      <description>Embedded Flash memory driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_FLASH
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_flash.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_flash.c"/>
+      </files>
+    </component>
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="GPIO" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>General-purpose I/O (GPIO) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_GPIO
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_gpio.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_gpio.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="I2C" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>Inter-integrated circuit (I2C) interface driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_I2C
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_i2c.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_i2c.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="IWDG" Cversion="1.0.0" condition="APM32F1xx STDPERIPH ">
+      <description>Independent watchdog (IWDG) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_IWDG
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_iwdg.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_iwdg.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="PWR" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>Power controller (PWR) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_PWR
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_pwr.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_pwr.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="RCC" Cversion="1.0.0" condition="APM32F1xx STDPERIPH">
+      <description>Reset and clock control (RCC) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_RCC
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_rcc.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_rcc.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="RTC" Cversion="1.0.0" condition="APM32F1xx STDPERIPH">
+      <description>Real-time clock (RTC) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_RTC
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_rtc.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_rtc.c"/>
+      </files>
+    </component>
+
+   
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="SPI" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>Serial peripheral interface (SPI) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_SPI
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_spi.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_spi.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="TIM" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>Timers (TIM) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_TIM
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_tim.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_tim.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="USART" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>Universal synchronous asynchronous receiver transmitter (USART) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_USART
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_usart.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_usart.c"/>
+      </files>
+    </component>
+
+    <component Cclass="Device" Cgroup="StdPeriph Drivers" Csub="WWDG" Cversion="1.0.0" condition="APM32F1xx STDPERIPH RCC">
+      <description>Window watchdog (WWDG) driver for APM32F1xx</description>
+      <RTE_Components_h>
+        #define RTE_DEVICE_STDPERIPH_WWDG
+      </RTE_Components_h>
+      <files>
+        <file category="header" name="Device/StdPeriph_Driver/inc/apm32f10x_wwdg.h"/>
+        <file category="source" name="Device/StdPeriph_Driver/src/apm32f10x_wwdg.c"/>
+      </files>
+    </component>
+  <!-- END: APEX Microelectronics Standard Peripherals Drivers -->
+  </components>
+  
+  
+  <boards>
+    <board vendor="APEXMIC" name="APM32F103MINI" revision="Ver 1.0">
+      <description>APEXMIC APM32F103 Development Board</description>
+      <image  large="Boards/APEXMIC/APM32F103MINI/Documentation/APM32E103-MINI.JPG"/>
+      <mountedDevice    deviceIndex="0" Dvendor="APEXMIC:153" Dname="APM32F103VB"/>
+      <compatibleDevice deviceIndex="0" Dvendor="APEXMIC:153" DsubFamily="APM32F103"/>
+      <feature type="XTAL"            n="8000000"/>
+      <feature type="PWR"             n="5"              name="USB Powered"/>
+      <feature type="USB"             n="1"              name="USB 2.0 Full Speed Device"/>
+      <feature type="RS232"           n="1"/>
+      <feature type="Button"          n="3"              name="Reset, KEY1 and KEY2"/>
+      <feature type="LED"             n="2"              name="LEDs directly connected to port pins"/>
+      <debugInterface adapter="JTAG/SW" connector="20 pin JTAG (0.1 inch connector)"/>
+    </board>
+    
+  </boards>
+  
+  <examples>
+    <example name="Blinky" doc="Abstract.txt" folder="Boards/APEXMIC/APM32F103MINI/Blinky">
+      <description>APM32_MINI  Blinky example</description>
+      <board name="APM32F103MINI" vendor="APEXMIC"/>
+      <project>
+        <environment name="uv" load="Blinky.uvprojx"/>
+      </project>
+      <attributes>
+        <component Cclass="CMSIS" Cgroup="CORE"/>
+          <component Cclass="Device" Cgroup="Startup"/>
+        <component Cclass="CMSIS" Cgroup="RTOS"/>
+        <category>Getting Started</category>
+        <category>CMSIS-RTX</category>
+        <keyword>LED</keyword>
+      </attributes>
+    </example>
+  </examples>
+</package>

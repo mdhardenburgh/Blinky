@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+  
+    <name>DA145xx_DFP</name>
+    <description>Dialog Semiconductor BLE ARM devices Device Family Pack.</description>
+    <vendor>DialogSemiconductor</vendor>
+    <url>https://s3.eu-west-2.amazonaws.com/lpccs-docs.dialog-semiconductor.com/CMSIS</url>
+    <supportContact>support.dialog-semiconductor.com</supportContact>
+	<license>License\license.txt</license>
+
+    <keywords>
+        <keyword>DeviceFamilyPack</keyword>
+        <keyword>Dialog</keyword>
+        <keyword>Dialog Semiconductor</keyword>
+        <keyword>DA14580</keyword>
+        <keyword>DA14581</keyword>
+        <keyword>DA14582</keyword>
+        <keyword>DA14583</keyword>
+        <keyword>DA14585</keyword>
+        <keyword>DA14586</keyword>
+        <keyword>BLE</keyword>
+        <keyword>ANT</keyword>
+    </keywords>
+
+  
+  <releases>
+      <release version="1.0.4" date="2019-01-16">
+      Date: 16.01.2018
+      Added IAR.
+      </release>
+    <release version="1.0.5" date="2019-02-22"  deprecated="2019-02-22" replacement="DialogSemiconductor.DA1458x_DFP">This pack has been deprecated
+      Date: 22.02.2019
+      Deprecated
+	</release>
+  </releases>
+  
+  <!-- devices section (mandatory for Device Family Packs) -->
+  <devices>
+
+	<family Dfamily="DA1458x Series" Dvendor="Dialog Semiconductor:113">
+	 
+    	<processor  Dcore="Cortex-M0"
+                    DcoreVersion="r0p2"
+                    Dendian="Little-endian"
+                    Dclock="16000000"
+                    Dfpu="0"
+                    Dmpu="0" />
+
+                <description>The DA1458x series are a System-on-Chip with a fully integrated radio transceiver and baseband processor for Bluetooth ® low energy 4.2 The DA1458x family supports a flexible memory architecture for storing Bluetooth profiles and custom application code, which can be updated over the air (OTA). The qualified Bluetooth low energy protocol stack is stored in a dedicated ROM. All software runs on the ARM® Cortex®-M0 processor via a simple scheduler. The Bluetooth low energy firmware includes the L2CAP service layer protocols, Security Manager (SM), Attribute Protocol (ATT), the Generic Attribute Profile (GATT) and the Generic Access Profile (GAP). All profiles published by the Bluetooth SIG as well as custom profiles are supported.</description>
+				
+                  
+				<device Dname="DA14585">
+				<description> The DA14585 has Flexible memory options for Bluetooth 5. It is an ultra-low power SoC integrating a 2.4 GHz transceiver and an ARM Cortex-M0® microcontroller with 96kB of RAM and 64kB of One-Time Programmable (OTP) memory. It offers a very fast boot time less then (less then 50ms) and supports up to 8 BLE connections. It can be used as a standalone application processor or as a data pump in hosted systems.</description>
+				<debug svd="Device/SVD/DA14585.svd"/>
+				<compile header="Device/Include/DA14585.h" define="DA14585"/>
+				<memory name="IRAM1" access ="rw" start="0x007fc000" size="0x018000" init="0" default="1"/>
+				<memory name="IROM1" access ="rx" start="0x00000000" size="0x015000" startup="1" default="1"/>
+				</device>
+                
+		</family>
+		
+  </devices>
+  <!-- conditions section (optional for all Software Packs)-->
+  
+    <conditions>
+	<!-- Compiler Conditions -->
+        <condition id="ARM Compiler">
+            <require Tcompiler="ARMCC"/>
+        </condition>
+
+		<condition id="GCC Compiler">
+            <require Tcompiler="GCC"/>
+        </condition>
+
+        <condition id="IAR Compiler">
+            <require Tcompiler="IAR"/>
+        </condition>
+
+		<condition id="DA1458x">
+			<!-- conditions selecting Devices -->
+			<description>Dialog Semiconductor DA1458x Series devices</description>
+			<accept Dvendor="Dialog Semiconductor:113" Dname="DA14585"/>
+		</condition>		
+
+		<condition id="DA1458x CMSIS-Core">
+		<!-- conditions selecting Devices -->
+		<description>Dialog Semiconductor DA1458x Series devices and CMSIS-Core (Cortex-M)</description>
+		<require condition="DA1458x"/>
+		<require Cclass="CMSIS" Cgroup="CORE"/>
+		</condition>		
+
+ 	    <!-- DA14585 Conditions -->
+         <condition id="DA14585 device and CMSIS">
+		<description>Dialog Semiconductor DA14585 CMSIS device</description>
+                <require condition="DA1458x CMSIS-Core"/>
+		<require Dvendor="Dialog Semiconductor:113" Dname="DA1458*"/>
+        </condition>
+
+
+    </conditions>
+
+    <!-- component section (optional for all Software Packs)-->
+  
+    <components>
+   	<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="DA14585 device and CMSIS">
+	   <description>System startup for Dialog Semiconductor DA14585 device</description>
+			
+	   <files>
+	        <!--  include folder -->
+		<file category="include" name="Device/Include/"/>
+
+		<!-- common device header file -->
+                <file category="header"  name="Device/Include/DA14585.h"                              version="1.0.0"/>
+			
+        	<!-- startup files -->
+		<!-- ARM Compiler Toolchain -->
+                <file category="source"  name="Device/Source/ARM/arm_startup_DA1458x.S" attr="config" version="1.0.0" condition="ARM Compiler"/>
+
+		<!-- IAR Compiler Toolchain -->
+                <file category="source"  name="Device/Source/IAR/iar_startup_DA1458x.S" attr="config" version="1.0.0" condition="IAR Compiler"/>
+			
+		<!-- GCC Compiler Toolchain -->
+                <file category="source"  name="Device/Source/GCC/gcc_startup_DA1458x.S" attr="config" version="1.0.0" condition="GCC Compiler"/>
+                <file category="source"  name="Device/Source/GCC/gcc_ivtable_DA1458x.S" attr="config" version="1.0.0" condition="GCC Compiler"/>
+
+	        <!-- system file -->
+                <file category="sourceC" name="Device/Source/system_DA1458x.c"          attr="config" version="1.0.0"/>
+                <file category="header"  name="Device/Include/system_DA1458x.h" 	                  version="1.0.0"/>
+				
+	   </files>		
+	</component>
+
+   </components>
+</package>

@@ -23,6 +23,7 @@ RM := rm -rf
 -include drivers/wc/subdir.mk
 -include drivers/vbat/subdir.mk
 -include drivers/uid/subdir.mk
+-include drivers/startup/device/subdir.mk
 -include drivers/sdif/subdir.mk
 -include drivers/rtc/subdir.mk
 -include drivers/reset/subdir.mk
@@ -56,7 +57,6 @@ RM := rm -rf
 -include drivers/adc/subdir.mk
 -include drivers/subdir.mk
 -include RTE/Device/S6E2CCAJ0A/subdir.mk
--include RTE/CMSIS/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -104,7 +104,7 @@ all: Blinky.elf secondary-outputs
 Blinky.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GNU ARM Cross C++ Linker'
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T /home/matt/softwareDefinedRadio/embedded/test/Blinky/linker/s6e2cca_rom.ld -Xlinker --gc-sections -Wl,-Map,"Blinky.map" --specs=nosys.specs -o "Blinky.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mlittle-endian -mfloat-abi=hard -mfpu=fpv4-sp-d16 -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T /home/matt/repos/Blinky/eclipseProject/linker/s6e2cca_rom.ld -Xlinker --gc-sections -Wl,-Map,"Blinky.map" --specs=nosys.specs -o "Blinky.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

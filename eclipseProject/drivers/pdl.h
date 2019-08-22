@@ -24,7 +24,10 @@
 /******************************************************************************/
 /* Include files                                                              */
 /******************************************************************************/
-#include "mcu.h"
+//#include "mcu.h"
+//#include "base_types.h"
+
+#include "startup/device/mcu.h"
 #include "base_types.h"
 
 /* C binding of definitions if building with C++ compiler                     */

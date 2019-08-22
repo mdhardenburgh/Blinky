@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package schemaVersion="1.4" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd">
+	<vendor>Goodix</vendor>
+	<name>GMF0x</name>
+	<description>GMF0x</description>
+	<url>http://product.goodix.com/cmsis_pack/</url>
+	<supportContact>dengling@goodix.com</supportContact>
+
+	<releases>
+		<release version="1.0.0">
+			Initial Version.
+		</release>
+	</releases>
+
+	<keywords>
+		<!-- keywords for indexing -->
+		<keyword>Goodix</keyword>
+		<keyword>GMF0x</keyword>
+	</keywords>
+
+	<devices>
+		<family Dfamily="GMF0x Series" Dvendor="Goodix:155">
+			<processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="0" Dmpu="0" Dendian="Little-endian" Dclock="48000000"/>
+			
+			<description>
+				Goodix' GMF0 series delivers 32-bit performance while providing the essentials of the GMF0 family, particularly for cost-sensitive applications. GMF0 MCUs combine real-time performance, low-power operation, and the advanced architecture and peripherals associated with the GMF0 platform available. This series of products is highly competitive in traditional 8-bit and 16-bit markets and eliminates the need to manage different architectures and the associated development overhead.
+				Typical applications include application control and user interfaces, handheld equipment, A/V receivers and digital TV, PC peripherals, gaming and GPS platforms, industrial applications, PLCs, inverters, printers, scanners, alarm systems, video intercoms, and HVACs
+
+				- SRAM with HW parity checking
+				- Timer with deadtime generation and emergency stop
+			</description>
+			<compile header="drivers\cmsis\device\goodix\gmf0xx\include\gmf0xx.h"/>
+			<debug svd="CMSIS/SVD/GMF0x0.svd"/>
+			<debugvars configfile="CMSIS/Debug/GMF030.dbgconf">
+					__var dbg_ctl = 0x00000006;
+					__var dbg_frez1 = 0x00000000;
+					__var dbg_frez2 = 0x00000000;
+			</debugvars>
+
+
+			<!-- ************************  Subfamily 'GMF030x'  **************************** -->
+			<subFamily DsubFamily="GMF030x">
+
+				<feature type="NVIC" n="32" name="NVIC"/>
+				<feature type="ExtInt" n="18"/>
+				<feature type="CoreOther" n="1" name="24-bit system timer"/>
+				<feature type="VCC" n="2.2" m="3.6"/>
+				<feature type="PowerMode" n="4" name="Run, Sleep, Stop, Standby"/>
+				<feature type="PowerOther" n="2" name="POR PDR"/>
+				<feature type="Temp" n="-40" m="85" name="Extended Operating Temperature Range"/>
+				<feature type="XTAL" n="4000000" m="32000000" name="External High Speed Crystal Oscillator"/>
+				<feature type="IntRC" n="8000000" name="Internal RC8M Oscillator with +/- 1% accuracy"/>
+				<feature type="PLL" n="1" name="Internal PLL"/>
+				<feature type="ClockOther" name="Other clock as:RC14M, RC40K, LXOSC 32.768kHz"/>
+				<feature type="DMA" n="5" name="High-Speed DMA"/>
+				<feature type="ADC" n="13" m="12" name="High-Performance ADC"/>
+				<feature type="TempSens" n="1"/>
+				<feature type="AnalogOther" n="2" name="OPAMP"/>
+				<feature type="Timer" n="5" m="16" name="Timer control include:Advanced-control timer,General-purpose timer,basic timer"/>
+				<feature type="WDT" n="2"/>
+				<feature type="RTC" n="32768" name="Internal RTC"/>
+				<feature type="I2C" n="1" name="I2C support Fm+ capactiy"/>
+				<feature type="USART" n="1" m="6000000" name="High-Speed USART Interface"/>
+				<feature type="SPI" n="1" m="18000000" name="SPI Interface"/>
+				<feature type="ComOther" n="1" name="DBG"/>
+				<feature type="MemoryOther" n="1" name="4 kB SRAM"/>
+
+
+				<!-- *************************  Device 'GMF0300C4PI'  2***************************** -->
+				<device Dname="GMF0300C4PI">
+					<compile define="GMF0300x4"/>
+					<memory id="IROM1" start="0x08000000" size="0x00004000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_16.FLM"  start="0x08000000" size="0x00004000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0300x4.h"/>
+					<variant Dvariant="GMF0300C4Px">
+						<feature type="Memory" n="16" name="Flash memory"/>
+						<feature type="IOs" n="39" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="QFP" n="48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0300C6PI'  3***************************** -->
+				<device Dname="GMF0300C6PI">
+					<compile define="GMF0300x6"/>
+					<memory id="IROM1" start="0x08000000" size="0x00008000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_32.FLM"  start="0x08000000" size="0x00008000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0300x6.h"/>
+					<variant Dvariant="GMF0300C6Px">
+						<feature type="Memory" n="32" name="Flash memory"/>
+						<feature type="IOs" n="39" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="QFP" n="48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0300F4TI'  4***************************** -->
+				<device Dname="GMF0300F4TI">
+					<compile define="GMF0300x4"/>
+					<memory id="IROM1" start="0x08000000" size="0x00004000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_16.FLM"  start="0x08000000" size="0x00004000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0300x4.h"/>
+					<variant Dvariant="GMF0300F4Tx">
+						<feature type="Memory" n="16" name="Flash memory"/>
+						<feature type="IOs" n="15" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="SOP" n="20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0300F6TI'  5***************************** -->
+				<device Dname="GMF0300F6TI">
+					<compile define="GMF0300x6"/>
+					<memory id="IROM1" start="0x08000000" size="0x00008000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_32.FLM"  start="0x08000000" size="0x00008000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0300x6.h"/>
+					<variant Dvariant="GMF0300F6Tx">
+						<feature type="Memory" n="32" name="Flash memory"/>
+						<feature type="IOs" n="15" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="SOP" n="20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0300K4PI'  6***************************** -->
+				<device Dname="GMF0300K4PI">
+					<compile define="GMF0300x4"/>
+					<memory id="IROM1" start="0x08000000" size="0x00004000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_16.FLM"  start="0x08000000" size="0x00004000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0300x4.h"/>
+					<variant Dvariant="GMF0300K4Px">
+						<feature type="Memory" n="16" name="Flash memory"/>
+						<feature type="IOs" n="25" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="QFP" n="32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0300K6PI'  7***************************** -->
+				<device Dname="GMF0300K6PI">
+					<compile define="GMF0300x6"/>
+					<memory id="IROM1" start="0x08000000" size="0x00008000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_32.FLM"  start="0x08000000" size="0x00008000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0300x6.h"/>
+					<variant Dvariant="GMF0300K6Px">
+						<feature type="Memory" n="32" name="Flash memory"/>
+						<feature type="IOs" n="25" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="QFP" n="32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0301C4PI'  8***************************** -->
+				<device Dname="GMF0301C4PI">
+					<compile define="GMF0301x4"/>
+					<memory id="IROM1" start="0x08000000" size="0x00004000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_16.FLM"  start="0x08000000" size="0x00004000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0301x4.h"/>
+					<variant Dvariant="GMF0301C4Px">
+						<feature type="Memory" n="16" name="Flash memory"/>
+						<feature type="IOs" n="39" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type="QFP" n="48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0301C6PI'  9***************************** -->
+				<device Dname="GMF0301C6PI">
+					<compile define="GMF0301x6"/>
+					<memory id="IROM1" start="0x08000000" size="0x00008000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_32.FLM"  start="0x08000000" size="0x00008000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0301x6.h"/>
+					<variant Dvariant="GMF0301C6Px">
+						<feature type="Memory" n="32" name="Flash memory"/>
+						<feature type="IOs" n="39" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type="QFP" n="48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0301F4TI'  10***************************** -->
+				<device Dname="GMF0301F4TI">
+					<compile define="GMF0301x4"/>
+					<memory id="IROM1" start="0x08000000" size="0x00004000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_16.FLM"  start="0x08000000" size="0x00004000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0301x4.h"/>
+					<variant Dvariant="GMF0301F4Tx">
+						<feature type="Memory" n="16" name="Flash memory"/>
+						<feature type="IOs" n="15" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type="SOP" n="20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0301F6TI'  11***************************** -->
+				<device Dname="GMF0301F6TI">
+					<compile define="GMF0301x6"/>
+					<memory id="IROM1" start="0x08000000" size="0x00008000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_32.FLM"  start="0x08000000" size="0x00008000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0301x6.h"/>
+					<variant Dvariant="GMF0301F6Tx">
+						<feature type="Memory" n="32" name="Flash memory"/>
+						<feature type="IOs" n="15" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type="SOP" n="20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0301K4PI'  12***************************** -->
+				<device Dname="GMF0301K4PI">
+					<compile define="GMF0301x4"/>
+					<memory id="IROM1" start="0x08000000" size="0x00004000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_16.FLM"  start="0x08000000" size="0x00004000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0301x4.h"/>
+					<variant Dvariant="GMF0301K4Px">
+						<feature type="Memory" n="16" name="Flash memory"/>
+						<feature type="IOs" n="25" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type="QFP" n="32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0301K6PI'  13***************************** -->
+				<device Dname="GMF0301K6PI">
+					<compile define="GMF0301x6"/>
+					<memory id="IROM1" start="0x08000000" size="0x00008000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_32.FLM"  start="0x08000000" size="0x00008000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0301x6.h"/>
+					<variant Dvariant="GMF0301K6Px">
+						<feature type="Memory" n="32" name="Flash memory"/>
+						<feature type="IOs" n="25" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type="QFP" n="32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0302C4PI'  14***************************** -->
+				<device Dname="GMF0302C4PI">
+					<compile define="GMF0302x4"/>
+					<memory id="IROM1" start="0x08000000" size="0x00004000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_16.FLM"  start="0x08000000" size="0x00004000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0302x4.h"/>
+					<variant Dvariant="GMF0302C4Px">
+						<feature type="Memory" n="16" name="Flash memory"/>
+						<feature type="IOs" n="39" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="Other" n="1" name="SYSCFG,24-channel TouchKey with one shielding,"/>
+						<feature type="QFP" n="32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0302C6PI'  15***************************** -->
+				<device Dname="GMF0302C6PI">
+					<compile define="GMF0302x6"/>
+					<memory id="IROM1" start="0x08000000" size="0x00008000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x00001000" init   ="0" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_32.FLM"  start="0x08000000" size="0x00008000" default="1"/>
+					<algorithm name="CMSIS/Flash/GMF0xx_OPT.FLM" start="0x1FFFF800" size="0x00000010" default="0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0302x6.h"/>
+					<variant Dvariant="GMF0302C6Px">
+						<feature type="Memory" n="32" name="Flash memory"/>
+						<feature type="IOs" n="39" name="General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="Other" n="1" name="SYSCFG,24-channel TouchKey with one shielding"/>
+						<feature type="QFP" n="48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0302F4TI'  16***************************** -->
+				<device Dname = "GMF0302F4TI">
+					<compile define="GMF0302x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0302x4.h"/>
+					<variant Dvariant = "GMF0302F4Tx">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0302F6TI'  17***************************** -->
+				<device Dname = "GMF0302F6TI">
+					<compile define="GMF0302x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0302x6.h"/>
+					<variant Dvariant = "GMF0302F6Tx">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0302K4PI'  18***************************** -->
+				<device Dname = "GMF0302K4PI">
+					<compile define="GMF0302x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0302x4.h"/>
+					<variant Dvariant = "GMF0302K4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0302K6PI'  19***************************** -->
+				<device Dname = "GMF0302K6PI">
+					<compile define="GMF0302x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0302x6.h"/>
+					<variant Dvariant = "GMF0302K6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0303C4PI'  20***************************** -->
+				<device Dname = "GMF0303C4PI">
+					<compile define="GMF0303x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0303x4.h"/>
+					<variant Dvariant = "GMF0303C4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0303C6PI'  21***************************** -->
+				<device Dname = "GMF0303C6PI">
+					<compile define="GMF0303x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0303x6.h"/>
+					<variant Dvariant = "GMF0303C6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0303F4TI'  22***************************** -->
+				<device Dname = "GMF0303F4TI">
+					<compile define="GMF0303x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0303x4.h"/>
+					<variant Dvariant = "GMF0303F4Tx">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0303F6TI'  23***************************** -->
+				<device Dname = "GMF0303F6TI">
+					<compile define="GMF0303x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0303x6.h"/>
+					<variant Dvariant = "GMF0303F6Tx">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0303K4PI'  24***************************** -->
+				<device Dname = "GMF0303K4PI">
+					<compile define="GMF0303x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0303x4.h"/>
+					<variant Dvariant = "GMF0303K4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0303K6PI'  25***************************** -->
+				<device Dname = "GMF0303K6PI">
+					<compile define="GMF0303x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0303x6.h"/>
+					<variant Dvariant = "GMF0303K6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+			</subFamily>
+
+			<subFamily DsubFamily="GMF031x">
+
+				<feature type="NVIC" n="32" name="NVIC"/>
+				<feature type="ExtInt" n="18"/>
+				<feature type="CoreOther" n="1" name="24-bit system timer"/>
+				<feature type="VCC" n="2.2" m="3.6"/>
+				<feature type="PowerMode" n="4" name="Run, Sleep, Stop, Standby"/>
+				<feature type="PowerOther" n="2" name="POR PDR"/>
+				<feature type="Temp" n="-40" m="85" name="Extended Operating Temperature Range"/>
+				<feature type="XTAL" n="4000000" m="32000000" name="External High Speed Crystal Oscillator"/>
+				<feature type="IntRC" n="8000000" name="Internal RC8M Oscillator with +/- 1% accuracy"/>
+				<feature type="PLL" n="1" name="Internal PLL"/>
+				<feature type="ClockOther" name="Other clock as:RC14M, RC40K, LXOSC 32.768kHz"/>
+				<feature type="DMA" n="5" name="High-Speed DMA"/>
+				<feature type="ADC" n="13" m="12" name="High-Performance ADC"/>
+				<feature type="TempSens" n="1"/>
+				<feature type="AnalogOther" n="2" name="OPAMP"/>
+				<feature type="Timer" n="5" m="16" name="Timer control include:Advanced-control timer,General-purpose timer,basic timer"/>
+				<feature type="WDT" n="2"/>
+				<feature type="RTC" n="32768" name="Internal RTC"/>
+				<feature type="I2C" n="1" name="I2C support Fm+ capactiy"/>
+				<feature type="USART" n="1" m="6000000" name="High-Speed USART Interface"/>
+				<feature type="SPI" n="1" m="18000000" name="SPI Interface"/>
+				<feature type="ComOther" n="1" name="DBG"/>
+				<feature type="MemoryOther" n="1" name="4 kB SRAM"/>
+
+
+
+				<!-- *************************  Device 'GMF0310C4PI'  26***************************** -->
+				<device Dname = "GMF0310C4PI">
+					<compile define="GMF0310x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0310x4.h"/>
+					<variant Dvariant = "GMF0310C4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+
+				<!-- *************************  Device 'GMF0310C6PI'  27***************************** -->
+				<device Dname = "GMF0310C6PI">
+					<compile define="GMF0310x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0310x6.h"/>
+					<variant Dvariant = "GMF0310C6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0310F4TI'  28***************************** -->
+				<device Dname = "GMF0310F4TI">
+					<compile define="GMF0310x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0310x4.h"/>
+					<variant Dvariant = "GMF0310F4Tx">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+				<!-- *************************  Device 'GMF0310F6TI'  29***************************** -->
+				<device Dname = "GMF0310F6TI">
+					<compile define="GMF0310x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0310x6.h"/>
+					<variant Dvariant = "GMF0310F6Tx">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0310K4PI'  30***************************** -->
+				<device Dname = "GMF0310K4PI">
+					<compile define="GMF0310x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0310x4.h"/>
+					<variant Dvariant = "GMF0310K4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0310K6PI'  31***************************** -->
+				<device Dname = "GMF0310K6PI">
+					<compile define="GMF0310x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0310x6.h"/>
+					<variant Dvariant = "GMF0310K6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0311C4PI'  32***************************** -->
+				<device Dname = "GMF0311C4PI">
+					<compile define="GMF0311x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0311x4.h"/>
+					<variant Dvariant = "GMF0311C4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+
+				<!-- *************************  Device 'GMF0311C6PI'  33***************************** -->
+				<device Dname = "GMF0311C6PI">
+					<compile define="GMF0311x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0311x6.h"/>
+					<variant Dvariant = "GMF0311C6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0311F4TI'  34***************************** -->
+				<device Dname = "GMF0311F4TI">
+					<compile define="GMF0311x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0311x4.h"/>
+					<variant Dvariant = "GMF0311F4Tx">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0311F6TI'  35***************************** -->
+				<device Dname = "GMF0311F6TI">
+					<compile define="GMF0311x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0311x6.h"/>
+					<variant Dvariant = "GMF0311F6Tx">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0311K4PI'  36***************************** -->
+				<device Dname = "GMF0311K4PI">
+					<compile define="GMF0311x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0311x4.h"/>
+					<variant Dvariant = "GMF0311K4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0311K6PI'  37***************************** -->
+				<device Dname = "GMF0311K6PI">
+					<compile define="GMF0311x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0311x6.h"/>
+					<variant Dvariant = "GMF0311K6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0312C4PI'  38***************************** -->
+				<device Dname = "GMF0312C4PI">
+					<compile define="GMF0312x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0312x4.h"/>
+					<variant Dvariant = "GMF0312C4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0312C6PI'  39***************************** -->
+				<device Dname = "GMF0312C6PI">
+					<compile define="GMF0312x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0312x6.h"/>
+					<variant Dvariant = "GMF0312C6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0312F4TI'  40***************************** -->
+				<device Dname = "GMF0312F4TI">
+					<compile define="GMF0312x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0312x4.h"/>
+					<variant Dvariant = "GMF0312F4Tx">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+				<!-- *************************  Device 'GMF0312F6TI'  41***************************** -->
+				<device Dname = "GMF0312F6TI">
+					<compile define="GMF0312x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0312x6.h"/>
+					<variant Dvariant = "GMF0312F6Tx">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0312K4PI'  42***************************** -->
+				<device Dname = "GMF0312K4PI">
+					<compile define="GMF0312x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0312x4.h"/>
+					<variant Dvariant = "GMF0312K4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0312K6PI'  43***************************** -->
+				<device Dname = "GMF0312K6PI">
+					<compile define="GMF0312x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0312x6.h"/>
+					<variant Dvariant = "GMF0312K6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0313C4PI'  44***************************** -->
+				<device Dname = "GMF0313C4PI">
+					<compile define="GMF0313x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0313x4.h"/>
+					<variant Dvariant = "GMF0313C4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0313C6PI'  45***************************** -->
+				<device Dname = "GMF0313C6PI">
+					<compile define="GMF0313x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0313x6.h"/>
+					<variant Dvariant = "GMF0313C6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "39" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "48"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0313F4TI'  46***************************** -->
+				<device Dname = "GMF0313F4TI">
+					<compile define="GMF0313x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0313x4.h"/>
+					<variant Dvariant = "GMF0313F4Tx">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0313F6TI'  47***************************** -->
+				<device Dname = "GMF0313F6TI">
+					<compile define="GMF0313x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0313x6.h"/>
+					<variant Dvariant = "GMF0313F6Tx">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "15" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "SOP" n = "20"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0313K4PI'  48***************************** -->
+				<device Dname = "GMF0313K4PI">
+					<compile define="GMF0313x4"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00004000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_16.FLM"  start = "0x08000000" size = "0x00004000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0313x4.h"/>
+					<variant Dvariant = "GMF0313K4Px">
+						<feature type = "Memory" n = "16" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+
+
+				<!-- *************************  Device 'GMF0313K6PI'  49***************************** -->
+				<device Dname = "GMF0313K6PI">
+					<compile define="GMF0313x6"/>
+					<memory id = "IROM1" start = "0x08000000" size = "0x00008000" startup = "1" default = "1"/>
+					<memory id = "IRAM1" start = "0x20000000" size = "0x00001000" init = "0" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_32.FLM"  start = "0x08000000" size = "0x00008000" default = "1"/>
+					<algorithm name = "CMSIS/Flash/GMF0xx_OPT.FLM" start = "0x1FFFF800" size = "0x00000010" default = "0"/>
+
+
+					<compile header="drivers/cmsis/device/goodix/gmf0xx/include/gmf0313x6.h"/>
+					<variant Dvariant = "GMF0313K6Px">
+						<feature type = "Memory" n = "32" name = "Flash memory"/>
+						<feature type = "IOs" n = "25" name = "General Purpose I/Os, 5V/3.3V tolerant"/>
+						<feature type="I2S" n="1"/>
+						<feature type="Other" n="1" name="SYSCFG, 24 - channel TouchKey with one shielding"/>
+						<feature type="Other" n="2" name="OPAMP"/>
+						<feature type = "QFP" n = "32"/>
+					</variant>
+				</device>
+			</subFamily>
+
+		</family>
+	</devices>
+
+	<conditions>
+		<!-- Compiler Conditions -->
+		<condition id="Compiler ARMCC">
+			<require Tcompiler="ARMCC"/>
+		</condition>
+
+		<!-- Device Conditions -->
+		<condition id="GMF0">
+			<description>Goodix GMF0 Series Devices</description>
+			<require Dvendor="Goodix:155"  Dname="GMF0*"/>
+		</condition>
+
+
+		<condition id="GMF0300x4x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0300?4*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0300x6x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0300?6*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0301x4x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0301?4*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0301x6x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0301?6*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0302x4x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0302?4*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0302x6x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0302?6*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0303x4x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0303?4*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0303x6x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0303?6*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0310x4x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0310?4*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0310x6x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0310?6*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0311x4x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0311?4*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0311x6x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0311?6*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0312x4x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0312?4*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0312x6x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0312?6*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0313x4x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0313?4*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<condition id="GMF0313x6x ARMCC">
+			<require Dvendor="Goodix:155"  Dname="GMF0313?6*"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+
+
+
+		<!-- Device + CMSIS Conditions -->
+		<condition id="GMF0 CMSIS">
+			<description>GMF0 Series Device and CMSIS-Core</description>
+			<require condition="GMF0"/>
+			<require Cclass="CMSIS"  Cgroup="CORE"/>
+		</condition>
+
+		<!-- Device + CMSIS + Compiler Conditions -->
+		<condition id="GMF0 CMSIS ARMCC">
+			<description>GMF0 Devices and ARMCC Compiler</description>
+			<require condition="GMF0 CMSIS"/>
+			<require condition="Compiler ARMCC"/>
+		</condition>
+
+		<!-- Device + CMSIS + ARMCC + Startup -->
+		<condition id="GMF0 CMSIS ARMCC Startup">
+			<description>GMF0 Series Device, CMSIS-Core and CodeGenerator</description>
+			<require condition="GMF0 CMSIS ARMCC"/>
+			<require Cclass="Device" Cgroup="Startup"/>
+		</condition>
+
+		<!-- Device + CMSIS + ARMCC + Startup + HAL Drivers -->
+		<condition id="GMF0 CMSIS ARMCC Startup HAL">
+			<description>GMF0 Series Device, CMSIS-Core and CodeGenerator</description>
+			<require condition="GMF0 CMSIS ARMCC Startup"/>
+			<require Cclass="Device" Cgroup="GMF0 HAL"/>
+		</condition>
+	</conditions>
+
+	<components>
+		<component Cclass="Device" Cgroup="Startup" condition="GMF0 CMSIS" Cversion="1.2.1">
+			<description>System Startup for GMF0</description>
+			<files>
+				<!-- startup files -->
+				<file category="include" name="drivers/cmsis/device/goodix/gmf0xx/include/"/>
+				<file category="header" name="drivers/cmsis/device/goodix/gmf0xx/include/system_gmf0xx.h"/>
+				<file category="source" name="drivers/cmsis/device/goodix/gmf0xx/source/system_gmf0xx.c" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0300x4x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0300x4.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0300x6x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0300x6.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0301x4x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0301x4.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0301x6x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0301x6.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0302x4x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0302x4.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0302x6x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0302x6.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0303x4x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0303x4.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0303x6x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0303x6.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0310x4x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0310x4.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0310x6x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0310x6.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0311x4x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0311x4.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0311x6x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0311x6.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0312x4x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0312x4.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0312x6x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0312x6.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0313x4x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0313x4.s" attr="config" version="1.2.1"/>
+				<file category="source" condition="GMF0313x6x ARMCC" name="drivers/cmsis/device/goodix/gmf0xx/source/keil/startup_gmf0313x6.s" attr="config" version="1.2.1"/>
+			</files>
+		</component>
+
+		<component Cclass="Device" Cgroup="GMF0 HAL" Cversion="1.2.1" condition="GMF0 CMSIS ARMCC Startup">
+			<description>GMF0 HAL Drivers</description>
+			<files>
+				<file category="include" name="drivers/driver/inc/"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_adc.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_cortex.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_crc.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_dma.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_eflash.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_fwdt.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_gpio.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_i2c.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_i2s.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_irda.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_pmu.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_rcc.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_rtc.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_smbus.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_spi.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_timer.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_uart.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_usart.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_hal_wwdt.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_adc.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_crc.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_dma.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_exti.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_gpio.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_i2c.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_pmu.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_rcc.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_rtc.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_spi.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_timer.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_usart.c"/>
+				<file category="source"  name="drivers/driver/src/gmf0xx_ll_utils.c"/>
+			</files>
+		</component>
+
+		<bundle Cbundle="GMF0X_Starter" Cclass="Board Support" Cversion="1.2.1">
+			<description>Goodix GMF0X_Starter Board</description>
+			<doc></doc>
+			<component Cgroup="All Driver" condition="GMF0 CMSIS ARMCC Startup HAL">
+				<description>Driver for Goodix GMF0X_Starter Board</description>
+				<files>
+					<file category="header" name="drivers/bsp/gmf0313c6_starter/gmf0313c6_starter.h"/>
+					<file category="source" name="drivers/bsp/gmf0313c6_starter/gmf0313c6_starter.c"/>
+				</files>
+			</component>
+		</bundle>
+	</components>
+
+</package>

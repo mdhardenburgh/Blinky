@@ -9,7 +9,7 @@
  *
  * ========================================
 */
-#include "mcu.h"
+
 #include "pdl_header.h"
 #include <inttypes.h>
 

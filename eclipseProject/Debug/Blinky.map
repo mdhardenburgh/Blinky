@@ -160,7 +160,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x9a ./utilities/seg_lcd/tsdh1188/tsdh1188.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
- .debug_macro   0x0000000000000000      0x136 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
+ .debug_macro   0x0000000000000000      0x13e ./utilities/seg_lcd/tsdh1188/tsdh1188.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
  .debug_macro   0x0000000000000000      0x174 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
@@ -183,7 +183,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./utilities/seg_lcd/tsdh1188/tsdh1188.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/seg_lcd/tsdh1188/tsdh1188.o
  .debug_macro   0x0000000000000000      0x190 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
- .debug_line    0x0000000000000000      0x489 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
+ .debug_line    0x0000000000000000      0x4e3 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
  .debug_str     0x0000000000000000   0x1b5d16 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
  .comment       0x0000000000000000       0x69 ./utilities/seg_lcd/tsdh1188/tsdh1188.o
  .group         0x0000000000000000        0xc ./utilities/seg_lcd/cl010/cl010.o
@@ -214,7 +214,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./utilities/seg_lcd/cl010/cl010.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/seg_lcd/cl010/cl010.o
- .debug_macro   0x0000000000000000      0x137 ./utilities/seg_lcd/cl010/cl010.o
+ .debug_macro   0x0000000000000000      0x13f ./utilities/seg_lcd/cl010/cl010.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/seg_lcd/cl010/cl010.o
  .debug_macro   0x0000000000000000      0x174 ./utilities/seg_lcd/cl010/cl010.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/seg_lcd/cl010/cl010.o
@@ -236,7 +236,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000     0x394c ./utilities/seg_lcd/cl010/cl010.o
  .debug_macro   0x0000000000000000      0x15c ./utilities/seg_lcd/cl010/cl010.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/seg_lcd/cl010/cl010.o
- .debug_line    0x0000000000000000      0x47d ./utilities/seg_lcd/cl010/cl010.o
+ .debug_line    0x0000000000000000      0x4d7 ./utilities/seg_lcd/cl010/cl010.o
  .debug_str     0x0000000000000000   0x1b5714 ./utilities/seg_lcd/cl010/cl010.o
  .comment       0x0000000000000000       0x69 ./utilities/seg_lcd/cl010/cl010.o
  .group         0x0000000000000000        0xc ./utilities/sdram/is42s16800.o
@@ -267,7 +267,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./utilities/sdram/is42s16800.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/sdram/is42s16800.o
- .debug_macro   0x0000000000000000      0x12d ./utilities/sdram/is42s16800.o
+ .debug_macro   0x0000000000000000      0x135 ./utilities/sdram/is42s16800.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/sdram/is42s16800.o
  .debug_macro   0x0000000000000000      0x877 ./utilities/sdram/is42s16800.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/sdram/is42s16800.o
@@ -289,7 +289,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./utilities/sdram/is42s16800.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/sdram/is42s16800.o
  .debug_macro   0x0000000000000000       0x40 ./utilities/sdram/is42s16800.o
- .debug_line    0x0000000000000000      0x471 ./utilities/sdram/is42s16800.o
+ .debug_line    0x0000000000000000      0x4cb ./utilities/sdram/is42s16800.o
  .debug_str     0x0000000000000000   0x1b5705 ./utilities/sdram/is42s16800.o
  .comment       0x0000000000000000       0x69 ./utilities/sdram/is42s16800.o
  .group         0x0000000000000000        0xc ./utilities/sd_card/sd_card.o
@@ -332,7 +332,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1a8 ./utilities/sd_card/sd_card.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/sd_card/sd_card.o
- .debug_macro   0x0000000000000000      0x1fb ./utilities/sd_card/sd_card.o
+ .debug_macro   0x0000000000000000      0x207 ./utilities/sd_card/sd_card.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/sd_card/sd_card.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/sd_card/sd_card.o
  .debug_macro   0x0000000000000000       0x5e ./utilities/sd_card/sd_card.o
@@ -366,7 +366,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./utilities/sd_card/sd_card.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/sd_card/sd_card.o
  .debug_macro   0x0000000000000000       0x40 ./utilities/sd_card/sd_card.o
- .debug_line    0x0000000000000000      0x5ad ./utilities/sd_card/sd_card.o
+ .debug_line    0x0000000000000000      0x5eb ./utilities/sd_card/sd_card.o
  .debug_str     0x0000000000000000   0x1b82e8 ./utilities/sd_card/sd_card.o
  .comment       0x0000000000000000       0x69 ./utilities/sd_card/sd_card.o
  .group         0x0000000000000000        0xc ./utilities/sd_card/sd_cmd.o
@@ -411,7 +411,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1bb ./utilities/sd_card/sd_cmd.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/sd_card/sd_cmd.o
- .debug_macro   0x0000000000000000      0x204 ./utilities/sd_card/sd_cmd.o
+ .debug_macro   0x0000000000000000      0x208 ./utilities/sd_card/sd_cmd.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/sd_card/sd_cmd.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/sd_card/sd_cmd.o
  .debug_macro   0x0000000000000000       0x5e ./utilities/sd_card/sd_cmd.o
@@ -447,7 +447,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./utilities/sd_card/sd_cmd.o
  .debug_macro   0x0000000000000000      0x15c ./utilities/sd_card/sd_cmd.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/sd_card/sd_cmd.o
- .debug_line    0x0000000000000000      0x4da ./utilities/sd_card/sd_cmd.o
+ .debug_line    0x0000000000000000      0x542 ./utilities/sd_card/sd_cmd.o
  .debug_str     0x0000000000000000   0x1b80a7 ./utilities/sd_card/sd_cmd.o
  .comment       0x0000000000000000       0x69 ./utilities/sd_card/sd_cmd.o
  .group         0x0000000000000000        0xc ./utilities/qspi_flash/flashS25FL164K.o
@@ -490,7 +490,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1a8 ./utilities/qspi_flash/flashS25FL164K.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/qspi_flash/flashS25FL164K.o
- .debug_macro   0x0000000000000000      0x1f3 ./utilities/qspi_flash/flashS25FL164K.o
+ .debug_macro   0x0000000000000000      0x1ff ./utilities/qspi_flash/flashS25FL164K.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/qspi_flash/flashS25FL164K.o
  .debug_macro   0x0000000000000000      0x877 ./utilities/qspi_flash/flashS25FL164K.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/qspi_flash/flashS25FL164K.o
@@ -524,7 +524,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x333 ./utilities/qspi_flash/flashS25FL164K.o
  .debug_macro   0x0000000000000000       0x10 ./utilities/qspi_flash/flashS25FL164K.o
  .debug_macro   0x0000000000000000       0x35 ./utilities/qspi_flash/flashS25FL164K.o
- .debug_line    0x0000000000000000      0x561 ./utilities/qspi_flash/flashS25FL164K.o
+ .debug_line    0x0000000000000000      0x5ad ./utilities/qspi_flash/flashS25FL164K.o
  .debug_str     0x0000000000000000   0x1b82ee ./utilities/qspi_flash/flashS25FL164K.o
  .comment       0x0000000000000000       0x69 ./utilities/qspi_flash/flashS25FL164K.o
  .group         0x0000000000000000        0xc ./utilities/printf_scanf/uart_io.o
@@ -585,7 +585,7 @@ Discarded input sections
  .debug_aranges
                 0x0000000000000000       0x28 ./utilities/printf_scanf/uart_io.o
  .debug_ranges  0x0000000000000000       0x18 ./utilities/printf_scanf/uart_io.o
- .debug_macro   0x0000000000000000      0x282 ./utilities/printf_scanf/uart_io.o
+ .debug_macro   0x0000000000000000      0x290 ./utilities/printf_scanf/uart_io.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/printf_scanf/uart_io.o
  .debug_macro   0x0000000000000000      0x877 ./utilities/printf_scanf/uart_io.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/printf_scanf/uart_io.o
@@ -630,9 +630,9 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x3d ./utilities/printf_scanf/uart_io.o
  .debug_macro   0x0000000000000000       0x16 ./utilities/printf_scanf/uart_io.o
  .debug_macro   0x0000000000000000      0x16f ./utilities/printf_scanf/uart_io.o
- .debug_macro   0x0000000000000000      0x25d ./utilities/printf_scanf/uart_io.o
+ .debug_macro   0x0000000000000000      0x257 ./utilities/printf_scanf/uart_io.o
  .debug_macro   0x0000000000000000       0x40 ./utilities/printf_scanf/uart_io.o
- .debug_line    0x0000000000000000      0x624 ./utilities/printf_scanf/uart_io.o
+ .debug_line    0x0000000000000000      0x67e ./utilities/printf_scanf/uart_io.o
  .debug_str     0x0000000000000000   0x1c1279 ./utilities/printf_scanf/uart_io.o
  .comment       0x0000000000000000       0x69 ./utilities/printf_scanf/uart_io.o
  .debug_frame   0x0000000000000000       0x58 ./utilities/printf_scanf/uart_io.o
@@ -664,7 +664,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./utilities/nand_flash/s34ml01g.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/nand_flash/s34ml01g.o
- .debug_macro   0x0000000000000000      0x12d ./utilities/nand_flash/s34ml01g.o
+ .debug_macro   0x0000000000000000      0x135 ./utilities/nand_flash/s34ml01g.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/nand_flash/s34ml01g.o
  .debug_macro   0x0000000000000000      0x877 ./utilities/nand_flash/s34ml01g.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/nand_flash/s34ml01g.o
@@ -686,7 +686,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./utilities/nand_flash/s34ml01g.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/nand_flash/s34ml01g.o
  .debug_macro   0x0000000000000000       0x40 ./utilities/nand_flash/s34ml01g.o
- .debug_line    0x0000000000000000      0x472 ./utilities/nand_flash/s34ml01g.o
+ .debug_line    0x0000000000000000      0x4cc ./utilities/nand_flash/s34ml01g.o
  .debug_str     0x0000000000000000   0x1b5708 ./utilities/nand_flash/s34ml01g.o
  .comment       0x0000000000000000       0x69 ./utilities/nand_flash/s34ml01g.o
  .group         0x0000000000000000        0xc ./utilities/i2s_codec/wm8731.o
@@ -730,7 +730,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x213 ./utilities/i2s_codec/wm8731.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/i2s_codec/wm8731.o
- .debug_macro   0x0000000000000000      0x1e8 ./utilities/i2s_codec/wm8731.o
+ .debug_macro   0x0000000000000000      0x1f6 ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000      0x877 ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/i2s_codec/wm8731.o
@@ -752,7 +752,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000       0x40 ./utilities/i2s_codec/wm8731.o
- .debug_macro   0x0000000000000000      0x25d ./utilities/i2s_codec/wm8731.o
+ .debug_macro   0x0000000000000000      0x257 ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000       0x64 ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000       0x18 ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000       0x35 ./utilities/i2s_codec/wm8731.o
@@ -765,7 +765,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x333 ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000       0x10 ./utilities/i2s_codec/wm8731.o
  .debug_macro   0x0000000000000000       0x35 ./utilities/i2s_codec/wm8731.o
- .debug_line    0x0000000000000000      0x502 ./utilities/i2s_codec/wm8731.o
+ .debug_line    0x0000000000000000      0x55c ./utilities/i2s_codec/wm8731.o
  .debug_str     0x0000000000000000   0x1bacd6 ./utilities/i2s_codec/wm8731.o
  .comment       0x0000000000000000       0x69 ./utilities/i2s_codec/wm8731.o
  .group         0x0000000000000000        0xc ./utilities/hyper_flash/s26kl512s.o
@@ -796,7 +796,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./utilities/hyper_flash/s26kl512s.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/hyper_flash/s26kl512s.o
- .debug_macro   0x0000000000000000      0x12d ./utilities/hyper_flash/s26kl512s.o
+ .debug_macro   0x0000000000000000      0x135 ./utilities/hyper_flash/s26kl512s.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/hyper_flash/s26kl512s.o
  .debug_macro   0x0000000000000000      0x877 ./utilities/hyper_flash/s26kl512s.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/hyper_flash/s26kl512s.o
@@ -818,7 +818,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./utilities/hyper_flash/s26kl512s.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/hyper_flash/s26kl512s.o
  .debug_macro   0x0000000000000000       0x40 ./utilities/hyper_flash/s26kl512s.o
- .debug_line    0x0000000000000000      0x473 ./utilities/hyper_flash/s26kl512s.o
+ .debug_line    0x0000000000000000      0x4cd ./utilities/hyper_flash/s26kl512s.o
  .debug_str     0x0000000000000000   0x1b570a ./utilities/hyper_flash/s26kl512s.o
  .comment       0x0000000000000000       0x69 ./utilities/hyper_flash/s26kl512s.o
  .group         0x0000000000000000        0xc ./utilities/eeprom/i2c_int_at24cxx.o
@@ -863,7 +863,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x213 ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/eeprom/i2c_int_at24cxx.o
- .debug_macro   0x0000000000000000      0x1fb ./utilities/eeprom/i2c_int_at24cxx.o
+ .debug_macro   0x0000000000000000      0x205 ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000      0x877 ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/eeprom/i2c_int_at24cxx.o
@@ -885,7 +885,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000       0x34 ./utilities/eeprom/i2c_int_at24cxx.o
- .debug_macro   0x0000000000000000      0x25d ./utilities/eeprom/i2c_int_at24cxx.o
+ .debug_macro   0x0000000000000000      0x257 ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000       0x40 ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000       0x64 ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000       0x18 ./utilities/eeprom/i2c_int_at24cxx.o
@@ -899,7 +899,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x333 ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000       0x10 ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_macro   0x0000000000000000       0x35 ./utilities/eeprom/i2c_int_at24cxx.o
- .debug_line    0x0000000000000000      0x521 ./utilities/eeprom/i2c_int_at24cxx.o
+ .debug_line    0x0000000000000000      0x57b ./utilities/eeprom/i2c_int_at24cxx.o
  .debug_str     0x0000000000000000   0x1bad9b ./utilities/eeprom/i2c_int_at24cxx.o
  .comment       0x0000000000000000       0x69 ./utilities/eeprom/i2c_int_at24cxx.o
  .group         0x0000000000000000        0xc ./utilities/eeprom/i2c_polling_at24cxx.o
@@ -932,7 +932,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x13d ./utilities/eeprom/i2c_polling_at24cxx.o
  .debug_aranges
                 0x0000000000000000       0x18 ./utilities/eeprom/i2c_polling_at24cxx.o
- .debug_macro   0x0000000000000000      0x13f ./utilities/eeprom/i2c_polling_at24cxx.o
+ .debug_macro   0x0000000000000000      0x149 ./utilities/eeprom/i2c_polling_at24cxx.o
  .debug_macro   0x0000000000000000      0xa90 ./utilities/eeprom/i2c_polling_at24cxx.o
  .debug_macro   0x0000000000000000      0x877 ./utilities/eeprom/i2c_polling_at24cxx.o
  .debug_macro   0x0000000000000000       0x22 ./utilities/eeprom/i2c_polling_at24cxx.o
@@ -954,9 +954,9 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./utilities/eeprom/i2c_polling_at24cxx.o
  .debug_macro   0x0000000000000000     0x112c ./utilities/eeprom/i2c_polling_at24cxx.o
  .debug_macro   0x0000000000000000       0x34 ./utilities/eeprom/i2c_polling_at24cxx.o
- .debug_macro   0x0000000000000000      0x25d ./utilities/eeprom/i2c_polling_at24cxx.o
+ .debug_macro   0x0000000000000000      0x257 ./utilities/eeprom/i2c_polling_at24cxx.o
  .debug_macro   0x0000000000000000       0x40 ./utilities/eeprom/i2c_polling_at24cxx.o
- .debug_line    0x0000000000000000      0x48c ./utilities/eeprom/i2c_polling_at24cxx.o
+ .debug_line    0x0000000000000000      0x4e6 ./utilities/eeprom/i2c_polling_at24cxx.o
  .debug_str     0x0000000000000000   0x1b81d0 ./utilities/eeprom/i2c_polling_at24cxx.o
  .comment       0x0000000000000000       0x69 ./utilities/eeprom/i2c_polling_at24cxx.o
  .group         0x0000000000000000        0xc ./source/main.o
@@ -1032,7 +1032,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./source/main.o
  .debug_macro   0x0000000000000000     0x112c ./source/main.o
  .debug_macro   0x0000000000000000       0x40 ./source/main.o
- .debug_macro   0x0000000000000000      0x25d ./source/main.o
+ .debug_macro   0x0000000000000000      0x257 ./source/main.o
  .debug_macro   0x0000000000000000       0x64 ./source/main.o
  .debug_macro   0x0000000000000000       0x18 ./source/main.o
  .debug_macro   0x0000000000000000       0x35 ./source/main.o
@@ -1079,7 +1079,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/wdg/hwwdg.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/wdg/hwwdg.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/wdg/hwwdg.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/wdg/hwwdg.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/wdg/hwwdg.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/wdg/hwwdg.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/wdg/hwwdg.o
@@ -1100,7 +1100,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/wdg/hwwdg.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/wdg/hwwdg.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/wdg/hwwdg.o
- .debug_line    0x0000000000000000      0x40a ./drivers/wdg/hwwdg.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/wdg/hwwdg.o
  .debug_str     0x0000000000000000   0x1b53da ./drivers/wdg/hwwdg.o
  .comment       0x0000000000000000       0x69 ./drivers/wdg/hwwdg.o
  .group         0x0000000000000000        0xc ./drivers/wdg/swwdg.o
@@ -1130,7 +1130,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/wdg/swwdg.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/wdg/swwdg.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/wdg/swwdg.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/wdg/swwdg.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/wdg/swwdg.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/wdg/swwdg.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/wdg/swwdg.o
@@ -1151,7 +1151,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/wdg/swwdg.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/wdg/swwdg.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/wdg/swwdg.o
- .debug_line    0x0000000000000000      0x40a ./drivers/wdg/swwdg.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/wdg/swwdg.o
  .debug_str     0x0000000000000000   0x1b53da ./drivers/wdg/swwdg.o
  .comment       0x0000000000000000       0x69 ./drivers/wdg/swwdg.o
  .group         0x0000000000000000        0xc ./drivers/wc/wc.o
@@ -1181,7 +1181,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/wc/wc.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/wc/wc.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/wc/wc.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/wc/wc.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/wc/wc.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/wc/wc.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/wc/wc.o
@@ -1202,7 +1202,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/wc/wc.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/wc/wc.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/wc/wc.o
- .debug_line    0x0000000000000000      0x402 ./drivers/wc/wc.o
+ .debug_line    0x0000000000000000      0x46a ./drivers/wc/wc.o
  .debug_str     0x0000000000000000   0x1b53d3 ./drivers/wc/wc.o
  .comment       0x0000000000000000       0x69 ./drivers/wc/wc.o
  .group         0x0000000000000000        0xc ./drivers/vbat/vbat.o
@@ -1233,7 +1233,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/vbat/vbat.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/vbat/vbat.o
- .debug_macro   0x0000000000000000      0x115 ./drivers/vbat/vbat.o
+ .debug_macro   0x0000000000000000      0x119 ./drivers/vbat/vbat.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/vbat/vbat.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/vbat/vbat.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/vbat/vbat.o
@@ -1255,7 +1255,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./drivers/vbat/vbat.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/vbat/vbat.o
  .debug_macro   0x0000000000000000       0x10 ./drivers/vbat/vbat.o
- .debug_line    0x0000000000000000      0x40a ./drivers/vbat/vbat.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/vbat/vbat.o
  .debug_str     0x0000000000000000   0x1b541b ./drivers/vbat/vbat.o
  .comment       0x0000000000000000       0x69 ./drivers/vbat/vbat.o
  .group         0x0000000000000000        0xc ./drivers/uid/uid.o
@@ -1285,7 +1285,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/uid/uid.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/uid/uid.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/uid/uid.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/uid/uid.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/uid/uid.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/uid/uid.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/uid/uid.o
@@ -1306,9 +1306,13 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/uid/uid.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/uid/uid.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/uid/uid.o
- .debug_line    0x0000000000000000      0x406 ./drivers/uid/uid.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/uid/uid.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/uid/uid.o
  .comment       0x0000000000000000       0x69 ./drivers/uid/uid.o
+ .data          0x0000000000000000        0x0 ./drivers/startup/device/startup_s6e2cc.o
+ .bss           0x0000000000000000        0x0 ./drivers/startup/device/startup_s6e2cc.o
+ .ARM.extab.FM.reset
+                0x0000000000000000        0x0 ./drivers/startup/device/startup_s6e2cc.o
  .group         0x0000000000000000        0xc ./drivers/sdif/sdif.o
  .group         0x0000000000000000        0xc ./drivers/sdif/sdif.o
  .group         0x0000000000000000        0xc ./drivers/sdif/sdif.o
@@ -1336,7 +1340,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/sdif/sdif.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/sdif/sdif.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/sdif/sdif.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/sdif/sdif.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/sdif/sdif.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/sdif/sdif.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/sdif/sdif.o
@@ -1357,7 +1361,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/sdif/sdif.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/sdif/sdif.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/sdif/sdif.o
- .debug_line    0x0000000000000000      0x40a ./drivers/sdif/sdif.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/sdif/sdif.o
  .debug_str     0x0000000000000000   0x1b53d9 ./drivers/sdif/sdif.o
  .comment       0x0000000000000000       0x69 ./drivers/sdif/sdif.o
  .group         0x0000000000000000        0xc ./drivers/rtc/rtc.o
@@ -1411,7 +1415,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1bb ./drivers/rtc/rtc.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/rtc/rtc.o
- .debug_macro   0x0000000000000000      0x25a ./drivers/rtc/rtc.o
+ .debug_macro   0x0000000000000000      0x25e ./drivers/rtc/rtc.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/rtc/rtc.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/rtc/rtc.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/rtc/rtc.o
@@ -1456,7 +1460,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x1c ./drivers/rtc/rtc.o
  .debug_macro   0x0000000000000000       0x3d ./drivers/rtc/rtc.o
  .debug_macro   0x0000000000000000       0x35 ./drivers/rtc/rtc.o
- .debug_line    0x0000000000000000      0x51f ./drivers/rtc/rtc.o
+ .debug_line    0x0000000000000000      0x587 ./drivers/rtc/rtc.o
  .debug_str     0x0000000000000000   0x1b8c33 ./drivers/rtc/rtc.o
  .comment       0x0000000000000000       0x69 ./drivers/rtc/rtc.o
  .group         0x0000000000000000        0xc ./drivers/reset/reset.o
@@ -1498,7 +1502,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x1a8 ./drivers/reset/reset.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/reset/reset.o
- .debug_macro   0x0000000000000000      0x1cc ./drivers/reset/reset.o
+ .debug_macro   0x0000000000000000      0x1d0 ./drivers/reset/reset.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/reset/reset.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/reset/reset.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/reset/reset.o
@@ -1531,7 +1535,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x333 ./drivers/reset/reset.o
  .debug_macro   0x0000000000000000       0x10 ./drivers/reset/reset.o
  .debug_macro   0x0000000000000000       0x35 ./drivers/reset/reset.o
- .debug_line    0x0000000000000000      0x4a7 ./drivers/reset/reset.o
+ .debug_line    0x0000000000000000      0x50f ./drivers/reset/reset.o
  .debug_str     0x0000000000000000   0x1b7fab ./drivers/reset/reset.o
  .comment       0x0000000000000000       0x69 ./drivers/reset/reset.o
  .group         0x0000000000000000        0xc ./drivers/rc/rc.o
@@ -1561,7 +1565,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/rc/rc.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/rc/rc.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/rc/rc.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/rc/rc.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/rc/rc.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/rc/rc.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/rc/rc.o
@@ -1582,7 +1586,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/rc/rc.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/rc/rc.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/rc/rc.o
- .debug_line    0x0000000000000000      0x402 ./drivers/rc/rc.o
+ .debug_line    0x0000000000000000      0x46a ./drivers/rc/rc.o
  .debug_str     0x0000000000000000   0x1b53d3 ./drivers/rc/rc.o
  .comment       0x0000000000000000       0x69 ./drivers/rc/rc.o
  .group         0x0000000000000000        0xc ./drivers/qprc/qprc.o
@@ -1612,7 +1616,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/qprc/qprc.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/qprc/qprc.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/qprc/qprc.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/qprc/qprc.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/qprc/qprc.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/qprc/qprc.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/qprc/qprc.o
@@ -1633,7 +1637,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/qprc/qprc.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/qprc/qprc.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/qprc/qprc.o
- .debug_line    0x0000000000000000      0x40a ./drivers/qprc/qprc.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/qprc/qprc.o
  .debug_str     0x0000000000000000   0x1b53d9 ./drivers/qprc/qprc.o
  .comment       0x0000000000000000       0x69 ./drivers/qprc/qprc.o
  .group         0x0000000000000000        0xc ./drivers/ppg/ppg.o
@@ -1663,7 +1667,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/ppg/ppg.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/ppg/ppg.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/ppg/ppg.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/ppg/ppg.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/ppg/ppg.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/ppg/ppg.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/ppg/ppg.o
@@ -1684,7 +1688,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/ppg/ppg.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/ppg/ppg.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/ppg/ppg.o
- .debug_line    0x0000000000000000      0x406 ./drivers/ppg/ppg.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/ppg/ppg.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/ppg/ppg.o
  .comment       0x0000000000000000       0x69 ./drivers/ppg/ppg.o
  .group         0x0000000000000000        0xc ./drivers/pcrc/pcrc.o
@@ -1714,7 +1718,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/pcrc/pcrc.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/pcrc/pcrc.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/pcrc/pcrc.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/pcrc/pcrc.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/pcrc/pcrc.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/pcrc/pcrc.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/pcrc/pcrc.o
@@ -1735,7 +1739,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/pcrc/pcrc.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/pcrc/pcrc.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/pcrc/pcrc.o
- .debug_line    0x0000000000000000      0x40a ./drivers/pcrc/pcrc.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/pcrc/pcrc.o
  .debug_str     0x0000000000000000   0x1b53d9 ./drivers/pcrc/pcrc.o
  .comment       0x0000000000000000       0x69 ./drivers/pcrc/pcrc.o
  .group         0x0000000000000000        0xc ./drivers/mft/mft_adcmp.o
@@ -1765,7 +1769,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/mft/mft_adcmp.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/mft/mft_adcmp.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/mft/mft_adcmp.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/mft/mft_adcmp.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/mft/mft_adcmp.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/mft/mft_adcmp.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_adcmp.o
@@ -1786,7 +1790,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_adcmp.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/mft/mft_adcmp.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/mft/mft_adcmp.o
- .debug_line    0x0000000000000000      0x412 ./drivers/mft/mft_adcmp.o
+ .debug_line    0x0000000000000000      0x47a ./drivers/mft/mft_adcmp.o
  .debug_str     0x0000000000000000   0x1b53e2 ./drivers/mft/mft_adcmp.o
  .comment       0x0000000000000000       0x69 ./drivers/mft/mft_adcmp.o
  .group         0x0000000000000000        0xc ./drivers/mft/mft_frt.o
@@ -1816,7 +1820,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/mft/mft_frt.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/mft/mft_frt.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/mft/mft_frt.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/mft/mft_frt.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/mft/mft_frt.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/mft/mft_frt.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_frt.o
@@ -1837,7 +1841,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_frt.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/mft/mft_frt.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/mft/mft_frt.o
- .debug_line    0x0000000000000000      0x40e ./drivers/mft/mft_frt.o
+ .debug_line    0x0000000000000000      0x476 ./drivers/mft/mft_frt.o
  .debug_str     0x0000000000000000   0x1b53de ./drivers/mft/mft_frt.o
  .comment       0x0000000000000000       0x69 ./drivers/mft/mft_frt.o
  .group         0x0000000000000000        0xc ./drivers/mft/mft_icu.o
@@ -1867,7 +1871,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/mft/mft_icu.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/mft/mft_icu.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/mft/mft_icu.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/mft/mft_icu.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/mft/mft_icu.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/mft/mft_icu.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_icu.o
@@ -1888,7 +1892,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_icu.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/mft/mft_icu.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/mft/mft_icu.o
- .debug_line    0x0000000000000000      0x40e ./drivers/mft/mft_icu.o
+ .debug_line    0x0000000000000000      0x476 ./drivers/mft/mft_icu.o
  .debug_str     0x0000000000000000   0x1b53de ./drivers/mft/mft_icu.o
  .comment       0x0000000000000000       0x69 ./drivers/mft/mft_icu.o
  .group         0x0000000000000000        0xc ./drivers/mft/mft_ocu.o
@@ -1918,7 +1922,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/mft/mft_ocu.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/mft/mft_ocu.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/mft/mft_ocu.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/mft/mft_ocu.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/mft/mft_ocu.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/mft/mft_ocu.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_ocu.o
@@ -1939,7 +1943,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_ocu.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/mft/mft_ocu.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/mft/mft_ocu.o
- .debug_line    0x0000000000000000      0x40e ./drivers/mft/mft_ocu.o
+ .debug_line    0x0000000000000000      0x476 ./drivers/mft/mft_ocu.o
  .debug_str     0x0000000000000000   0x1b53de ./drivers/mft/mft_ocu.o
  .comment       0x0000000000000000       0x69 ./drivers/mft/mft_ocu.o
  .group         0x0000000000000000        0xc ./drivers/mft/mft_wfg.o
@@ -1969,7 +1973,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/mft/mft_wfg.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/mft/mft_wfg.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/mft/mft_wfg.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/mft/mft_wfg.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/mft/mft_wfg.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/mft/mft_wfg.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_wfg.o
@@ -1990,7 +1994,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/mft/mft_wfg.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/mft/mft_wfg.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/mft/mft_wfg.o
- .debug_line    0x0000000000000000      0x40e ./drivers/mft/mft_wfg.o
+ .debug_line    0x0000000000000000      0x476 ./drivers/mft/mft_wfg.o
  .debug_str     0x0000000000000000   0x1b53de ./drivers/mft/mft_wfg.o
  .comment       0x0000000000000000       0x69 ./drivers/mft/mft_wfg.o
  .group         0x0000000000000000        0xc ./drivers/mfs/mfs.o
@@ -2146,7 +2150,7 @@ Discarded input sections
  .debug_aranges
                 0x0000000000000000      0x200 ./drivers/mfs/mfs.o
  .debug_ranges  0x0000000000000000      0x1f0 ./drivers/mfs/mfs.o
- .debug_macro   0x0000000000000000      0x12d ./drivers/mfs/mfs.o
+ .debug_macro   0x0000000000000000      0x131 ./drivers/mfs/mfs.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/mfs/mfs.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/mfs/mfs.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/mfs/mfs.o
@@ -2168,7 +2172,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./drivers/mfs/mfs.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/mfs/mfs.o
  .debug_macro   0x0000000000000000      0x257 ./drivers/mfs/mfs.o
- .debug_line    0x0000000000000000     0x1718 ./drivers/mfs/mfs.o
+ .debug_line    0x0000000000000000     0x1780 ./drivers/mfs/mfs.o
  .debug_str     0x0000000000000000   0x1ba50c ./drivers/mfs/mfs.o
  .comment       0x0000000000000000       0x69 ./drivers/mfs/mfs.o
  .debug_frame   0x0000000000000000      0x974 ./drivers/mfs/mfs.o
@@ -2199,7 +2203,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/lvd/lvd.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/lvd/lvd.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/lvd/lvd.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/lvd/lvd.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/lvd/lvd.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/lvd/lvd.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/lvd/lvd.o
@@ -2220,7 +2224,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/lvd/lvd.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/lvd/lvd.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/lvd/lvd.o
- .debug_line    0x0000000000000000      0x406 ./drivers/lvd/lvd.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/lvd/lvd.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/lvd/lvd.o
  .comment       0x0000000000000000       0x69 ./drivers/lvd/lvd.o
  .group         0x0000000000000000        0xc ./drivers/lpm/lpm.o
@@ -2250,7 +2254,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/lpm/lpm.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/lpm/lpm.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/lpm/lpm.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/lpm/lpm.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/lpm/lpm.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/lpm/lpm.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/lpm/lpm.o
@@ -2271,7 +2275,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/lpm/lpm.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/lpm/lpm.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/lpm/lpm.o
- .debug_line    0x0000000000000000      0x406 ./drivers/lpm/lpm.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/lpm/lpm.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/lpm/lpm.o
  .comment       0x0000000000000000       0x69 ./drivers/lpm/lpm.o
  .group         0x0000000000000000        0xc ./drivers/lcd/lcd.o
@@ -2301,7 +2305,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/lcd/lcd.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/lcd/lcd.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/lcd/lcd.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/lcd/lcd.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/lcd/lcd.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/lcd/lcd.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/lcd/lcd.o
@@ -2322,7 +2326,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/lcd/lcd.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/lcd/lcd.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/lcd/lcd.o
- .debug_line    0x0000000000000000      0x406 ./drivers/lcd/lcd.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/lcd/lcd.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/lcd/lcd.o
  .comment       0x0000000000000000       0x69 ./drivers/lcd/lcd.o
  .group         0x0000000000000000        0xc ./drivers/icc/icc.o
@@ -2352,7 +2356,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/icc/icc.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/icc/icc.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/icc/icc.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/icc/icc.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/icc/icc.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/icc/icc.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/icc/icc.o
@@ -2373,7 +2377,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/icc/icc.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/icc/icc.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/icc/icc.o
- .debug_line    0x0000000000000000      0x406 ./drivers/icc/icc.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/icc/icc.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/icc/icc.o
  .comment       0x0000000000000000       0x69 ./drivers/icc/icc.o
  .group         0x0000000000000000        0xc ./drivers/i2s/i2s.o
@@ -2403,7 +2407,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/i2s/i2s.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/i2s/i2s.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/i2s/i2s.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/i2s/i2s.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/i2s/i2s.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/i2s/i2s.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/i2s/i2s.o
@@ -2424,7 +2428,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/i2s/i2s.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/i2s/i2s.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/i2s/i2s.o
- .debug_line    0x0000000000000000      0x406 ./drivers/i2s/i2s.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/i2s/i2s.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/i2s/i2s.o
  .comment       0x0000000000000000       0x69 ./drivers/i2s/i2s.o
  .group         0x0000000000000000        0xc ./drivers/i2cs/i2cs.o
@@ -2454,7 +2458,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/i2cs/i2cs.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/i2cs/i2cs.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/i2cs/i2cs.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/i2cs/i2cs.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/i2cs/i2cs.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/i2cs/i2cs.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/i2cs/i2cs.o
@@ -2475,7 +2479,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/i2cs/i2cs.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/i2cs/i2cs.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/i2cs/i2cs.o
- .debug_line    0x0000000000000000      0x40a ./drivers/i2cs/i2cs.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/i2cs/i2cs.o
  .debug_str     0x0000000000000000   0x1b53d9 ./drivers/i2cs/i2cs.o
  .comment       0x0000000000000000       0x69 ./drivers/i2cs/i2cs.o
  .group         0x0000000000000000        0xc ./drivers/hsspi/hsspi.o
@@ -2505,7 +2509,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/hsspi/hsspi.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/hsspi/hsspi.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/hsspi/hsspi.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/hsspi/hsspi.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/hsspi/hsspi.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/hsspi/hsspi.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/hsspi/hsspi.o
@@ -2526,7 +2530,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/hsspi/hsspi.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/hsspi/hsspi.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/hsspi/hsspi.o
- .debug_line    0x0000000000000000      0x40e ./drivers/hsspi/hsspi.o
+ .debug_line    0x0000000000000000      0x476 ./drivers/hsspi/hsspi.o
  .debug_str     0x0000000000000000   0x1b53dc ./drivers/hsspi/hsspi.o
  .comment       0x0000000000000000       0x69 ./drivers/hsspi/hsspi.o
  .group         0x0000000000000000        0xc ./drivers/hbif/hbif.o
@@ -2556,7 +2560,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/hbif/hbif.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/hbif/hbif.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/hbif/hbif.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/hbif/hbif.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/hbif/hbif.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/hbif/hbif.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/hbif/hbif.o
@@ -2577,7 +2581,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/hbif/hbif.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/hbif/hbif.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/hbif/hbif.o
- .debug_line    0x0000000000000000      0x40a ./drivers/hbif/hbif.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/hbif/hbif.o
  .debug_str     0x0000000000000000   0x1b53d9 ./drivers/hbif/hbif.o
  .comment       0x0000000000000000       0x69 ./drivers/hbif/hbif.o
  .group         0x0000000000000000        0xc ./drivers/flash/dualflash.o
@@ -2607,7 +2611,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/flash/dualflash.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/flash/dualflash.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/flash/dualflash.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/flash/dualflash.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/flash/dualflash.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/flash/dualflash.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/flash/dualflash.o
@@ -2628,7 +2632,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/flash/dualflash.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/flash/dualflash.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/flash/dualflash.o
- .debug_line    0x0000000000000000      0x416 ./drivers/flash/dualflash.o
+ .debug_line    0x0000000000000000      0x47e ./drivers/flash/dualflash.o
  .debug_str     0x0000000000000000   0x1b53e2 ./drivers/flash/dualflash.o
  .comment       0x0000000000000000       0x69 ./drivers/flash/dualflash.o
  .group         0x0000000000000000        0xc ./drivers/flash/mainflash.o
@@ -2658,7 +2662,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/flash/mainflash.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/flash/mainflash.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/flash/mainflash.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/flash/mainflash.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/flash/mainflash.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/flash/mainflash.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/flash/mainflash.o
@@ -2679,7 +2683,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/flash/mainflash.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/flash/mainflash.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/flash/mainflash.o
- .debug_line    0x0000000000000000      0x416 ./drivers/flash/mainflash.o
+ .debug_line    0x0000000000000000      0x47e ./drivers/flash/mainflash.o
  .debug_str     0x0000000000000000   0x1b53e2 ./drivers/flash/mainflash.o
  .comment       0x0000000000000000       0x69 ./drivers/flash/mainflash.o
  .group         0x0000000000000000        0xc ./drivers/flash/workflash.o
@@ -2709,7 +2713,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/flash/workflash.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/flash/workflash.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/flash/workflash.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/flash/workflash.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/flash/workflash.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/flash/workflash.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/flash/workflash.o
@@ -2730,7 +2734,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/flash/workflash.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/flash/workflash.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/flash/workflash.o
- .debug_line    0x0000000000000000      0x416 ./drivers/flash/workflash.o
+ .debug_line    0x0000000000000000      0x47e ./drivers/flash/workflash.o
  .debug_str     0x0000000000000000   0x1b53e3 ./drivers/flash/workflash.o
  .comment       0x0000000000000000       0x69 ./drivers/flash/workflash.o
  .group         0x0000000000000000        0xc ./drivers/extif/extif.o
@@ -2760,7 +2764,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/extif/extif.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/extif/extif.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/extif/extif.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/extif/extif.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/extif/extif.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/extif/extif.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/extif/extif.o
@@ -2781,7 +2785,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/extif/extif.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/extif/extif.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/extif/extif.o
- .debug_line    0x0000000000000000      0x40e ./drivers/extif/extif.o
+ .debug_line    0x0000000000000000      0x476 ./drivers/extif/extif.o
  .debug_str     0x0000000000000000   0x1b53dc ./drivers/extif/extif.o
  .comment       0x0000000000000000       0x69 ./drivers/extif/extif.o
  .group         0x0000000000000000        0xc ./drivers/exint/exint.o
@@ -2811,7 +2815,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/exint/exint.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/exint/exint.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/exint/exint.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/exint/exint.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/exint/exint.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/exint/exint.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/exint/exint.o
@@ -2832,7 +2836,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/exint/exint.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/exint/exint.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/exint/exint.o
- .debug_line    0x0000000000000000      0x40e ./drivers/exint/exint.o
+ .debug_line    0x0000000000000000      0x476 ./drivers/exint/exint.o
  .debug_str     0x0000000000000000   0x1b53dc ./drivers/exint/exint.o
  .comment       0x0000000000000000       0x69 ./drivers/exint/exint.o
  .group         0x0000000000000000        0xc ./drivers/dt/dt.o
@@ -2862,7 +2866,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/dt/dt.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/dt/dt.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/dt/dt.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/dt/dt.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/dt/dt.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/dt/dt.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/dt/dt.o
@@ -2883,7 +2887,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/dt/dt.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/dt/dt.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/dt/dt.o
- .debug_line    0x0000000000000000      0x402 ./drivers/dt/dt.o
+ .debug_line    0x0000000000000000      0x46a ./drivers/dt/dt.o
  .debug_str     0x0000000000000000   0x1b53d3 ./drivers/dt/dt.o
  .comment       0x0000000000000000       0x69 ./drivers/dt/dt.o
  .group         0x0000000000000000        0xc ./drivers/dstc/dstc.o
@@ -2913,7 +2917,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/dstc/dstc.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/dstc/dstc.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/dstc/dstc.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/dstc/dstc.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/dstc/dstc.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/dstc/dstc.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/dstc/dstc.o
@@ -2934,7 +2938,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/dstc/dstc.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/dstc/dstc.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/dstc/dstc.o
- .debug_line    0x0000000000000000      0x40a ./drivers/dstc/dstc.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/dstc/dstc.o
  .debug_str     0x0000000000000000   0x1b53d9 ./drivers/dstc/dstc.o
  .comment       0x0000000000000000       0x69 ./drivers/dstc/dstc.o
  .group         0x0000000000000000        0xc ./drivers/dma/dma.o
@@ -2964,7 +2968,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/dma/dma.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/dma/dma.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/dma/dma.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/dma/dma.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/dma/dma.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/dma/dma.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/dma/dma.o
@@ -2985,7 +2989,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/dma/dma.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/dma/dma.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/dma/dma.o
- .debug_line    0x0000000000000000      0x406 ./drivers/dma/dma.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/dma/dma.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/dma/dma.o
  .comment       0x0000000000000000       0x69 ./drivers/dma/dma.o
  .group         0x0000000000000000        0xc ./drivers/dac/dac.o
@@ -3015,7 +3019,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/dac/dac.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/dac/dac.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/dac/dac.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/dac/dac.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/dac/dac.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/dac/dac.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/dac/dac.o
@@ -3036,7 +3040,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/dac/dac.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/dac/dac.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/dac/dac.o
- .debug_line    0x0000000000000000      0x406 ./drivers/dac/dac.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/dac/dac.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/dac/dac.o
  .comment       0x0000000000000000       0x69 ./drivers/dac/dac.o
  .group         0x0000000000000000        0xc ./drivers/csv/csv.o
@@ -3066,7 +3070,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/csv/csv.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/csv/csv.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/csv/csv.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/csv/csv.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/csv/csv.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/csv/csv.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/csv/csv.o
@@ -3087,7 +3091,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/csv/csv.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/csv/csv.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/csv/csv.o
- .debug_line    0x0000000000000000      0x406 ./drivers/csv/csv.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/csv/csv.o
  .debug_str     0x0000000000000000   0x1b53d4 ./drivers/csv/csv.o
  .comment       0x0000000000000000       0x69 ./drivers/csv/csv.o
  .group         0x0000000000000000        0xc ./drivers/crc/crc.o
@@ -3117,7 +3121,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/crc/crc.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/crc/crc.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/crc/crc.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/crc/crc.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/crc/crc.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/crc/crc.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/crc/crc.o
@@ -3138,7 +3142,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/crc/crc.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/crc/crc.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/crc/crc.o
- .debug_line    0x0000000000000000      0x406 ./drivers/crc/crc.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/crc/crc.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/crc/crc.o
  .comment       0x0000000000000000       0x69 ./drivers/crc/crc.o
  .group         0x0000000000000000        0xc ./drivers/cr/cr.o
@@ -3168,7 +3172,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/cr/cr.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/cr/cr.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/cr/cr.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/cr/cr.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/cr/cr.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/cr/cr.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/cr/cr.o
@@ -3189,7 +3193,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/cr/cr.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/cr/cr.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/cr/cr.o
- .debug_line    0x0000000000000000      0x402 ./drivers/cr/cr.o
+ .debug_line    0x0000000000000000      0x46a ./drivers/cr/cr.o
  .debug_str     0x0000000000000000   0x1b53d3 ./drivers/cr/cr.o
  .comment       0x0000000000000000       0x69 ./drivers/cr/cr.o
  .group         0x0000000000000000        0xc ./drivers/clk/clk.o
@@ -3219,7 +3223,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/clk/clk.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/clk/clk.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/clk/clk.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/clk/clk.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/clk/clk.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/clk/clk.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/clk/clk.o
@@ -3240,7 +3244,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/clk/clk.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/clk/clk.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/clk/clk.o
- .debug_line    0x0000000000000000      0x406 ./drivers/clk/clk.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/clk/clk.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/clk/clk.o
  .comment       0x0000000000000000       0x69 ./drivers/clk/clk.o
  .group         0x0000000000000000        0xc ./drivers/can/can.o
@@ -3270,7 +3274,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/can/can.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/can/can.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/can/can.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/can/can.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/can/can.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/can/can.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/can/can.o
@@ -3291,7 +3295,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/can/can.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/can/can.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/can/can.o
- .debug_line    0x0000000000000000      0x406 ./drivers/can/can.o
+ .debug_line    0x0000000000000000      0x46e ./drivers/can/can.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/can/can.o
  .comment       0x0000000000000000       0x69 ./drivers/can/can.o
  .group         0x0000000000000000        0xc ./drivers/can/can_pre.o
@@ -3321,7 +3325,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/can/can_pre.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/can/can_pre.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/can/can_pre.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/can/can_pre.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/can/can_pre.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/can/can_pre.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/can/can_pre.o
@@ -3342,7 +3346,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/can/can_pre.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/can/can_pre.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/can/can_pre.o
- .debug_line    0x0000000000000000      0x40e ./drivers/can/can_pre.o
+ .debug_line    0x0000000000000000      0x476 ./drivers/can/can_pre.o
  .debug_str     0x0000000000000000   0x1b53de ./drivers/can/can_pre.o
  .comment       0x0000000000000000       0x69 ./drivers/can/can_pre.o
  .group         0x0000000000000000        0xc ./drivers/can/canfd.o
@@ -3372,7 +3376,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000       0x52 ./drivers/can/canfd.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/can/canfd.o
- .debug_macro   0x0000000000000000      0x110 ./drivers/can/canfd.o
+ .debug_macro   0x0000000000000000      0x114 ./drivers/can/canfd.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/can/canfd.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/can/canfd.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/can/canfd.o
@@ -3393,7 +3397,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/can/canfd.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/can/canfd.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/can/canfd.o
- .debug_line    0x0000000000000000      0x40a ./drivers/can/canfd.o
+ .debug_line    0x0000000000000000      0x472 ./drivers/can/canfd.o
  .debug_str     0x0000000000000000   0x1b53da ./drivers/can/canfd.o
  .comment       0x0000000000000000       0x69 ./drivers/can/canfd.o
  .group         0x0000000000000000        0xc ./drivers/bt/bt.o
@@ -3579,7 +3583,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/adc/adc.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/adc/adc.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/adc/adc.o
- .debug_line    0x0000000000000000      0x406 ./drivers/adc/adc.o
+ .debug_line    0x0000000000000000      0x428 ./drivers/adc/adc.o
  .debug_str     0x0000000000000000   0x1b53d6 ./drivers/adc/adc.o
  .comment       0x0000000000000000       0x69 ./drivers/adc/adc.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm0p_type_1-a.o
@@ -3630,7 +3634,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm0p_type_1-a.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm0p_type_1-a.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm0p_type_1-a.o
- .debug_line    0x0000000000000000      0x3a5 ./drivers/interrupts_fm0p_type_1-a.o
+ .debug_line    0x0000000000000000      0x3bf ./drivers/interrupts_fm0p_type_1-a.o
  .debug_str     0x0000000000000000   0x1b53f3 ./drivers/interrupts_fm0p_type_1-a.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm0p_type_1-a.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm0p_type_1-b.o
@@ -3681,7 +3685,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm0p_type_1-b.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm0p_type_1-b.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm0p_type_1-b.o
- .debug_line    0x0000000000000000      0x3a5 ./drivers/interrupts_fm0p_type_1-b.o
+ .debug_line    0x0000000000000000      0x3bf ./drivers/interrupts_fm0p_type_1-b.o
  .debug_str     0x0000000000000000   0x1b53f3 ./drivers/interrupts_fm0p_type_1-b.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm0p_type_1-b.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm0p_type_2-a.o
@@ -3732,7 +3736,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm0p_type_2-a.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm0p_type_2-a.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm0p_type_2-a.o
- .debug_line    0x0000000000000000      0x3a5 ./drivers/interrupts_fm0p_type_2-a.o
+ .debug_line    0x0000000000000000      0x3bf ./drivers/interrupts_fm0p_type_2-a.o
  .debug_str     0x0000000000000000   0x1b53f3 ./drivers/interrupts_fm0p_type_2-a.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm0p_type_2-a.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm0p_type_2-b.o
@@ -3783,7 +3787,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm0p_type_2-b.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm0p_type_2-b.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm0p_type_2-b.o
- .debug_line    0x0000000000000000      0x3a5 ./drivers/interrupts_fm0p_type_2-b.o
+ .debug_line    0x0000000000000000      0x3bf ./drivers/interrupts_fm0p_type_2-b.o
  .debug_str     0x0000000000000000   0x1b53f3 ./drivers/interrupts_fm0p_type_2-b.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm0p_type_2-b.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm0p_type_3.o
@@ -3834,7 +3838,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm0p_type_3.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm0p_type_3.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm0p_type_3.o
- .debug_line    0x0000000000000000      0x3a3 ./drivers/interrupts_fm0p_type_3.o
+ .debug_line    0x0000000000000000      0x3bd ./drivers/interrupts_fm0p_type_3.o
  .debug_str     0x0000000000000000   0x1b53f1 ./drivers/interrupts_fm0p_type_3.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm0p_type_3.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm3_type_a.o
@@ -3885,7 +3889,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm3_type_a.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm3_type_a.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm3_type_a.o
- .debug_line    0x0000000000000000      0x3a1 ./drivers/interrupts_fm3_type_a.o
+ .debug_line    0x0000000000000000      0x3bb ./drivers/interrupts_fm3_type_a.o
  .debug_str     0x0000000000000000   0x1b53ef ./drivers/interrupts_fm3_type_a.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm3_type_a.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm3_type_b.o
@@ -3936,7 +3940,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm3_type_b.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm3_type_b.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm3_type_b.o
- .debug_line    0x0000000000000000      0x3a1 ./drivers/interrupts_fm3_type_b.o
+ .debug_line    0x0000000000000000      0x3bb ./drivers/interrupts_fm3_type_b.o
  .debug_str     0x0000000000000000   0x1b53ef ./drivers/interrupts_fm3_type_b.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm3_type_b.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm3_type_c.o
@@ -3987,7 +3991,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm3_type_c.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm3_type_c.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm3_type_c.o
- .debug_line    0x0000000000000000      0x3a1 ./drivers/interrupts_fm3_type_c.o
+ .debug_line    0x0000000000000000      0x3bb ./drivers/interrupts_fm3_type_c.o
  .debug_str     0x0000000000000000   0x1b53ef ./drivers/interrupts_fm3_type_c.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm3_type_c.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm4_type_a.o
@@ -4018,7 +4022,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x11f ./drivers/interrupts_fm4_type_a.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/interrupts_fm4_type_a.o
- .debug_macro   0x0000000000000000      0x123 ./drivers/interrupts_fm4_type_a.o
+ .debug_macro   0x0000000000000000      0x127 ./drivers/interrupts_fm4_type_a.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/interrupts_fm4_type_a.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/interrupts_fm4_type_a.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm4_type_a.o
@@ -4040,7 +4044,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm4_type_a.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm4_type_a.o
  .debug_macro   0x0000000000000000       0x89 ./drivers/interrupts_fm4_type_a.o
- .debug_line    0x0000000000000000      0x402 ./drivers/interrupts_fm4_type_a.o
+ .debug_line    0x0000000000000000      0x454 ./drivers/interrupts_fm4_type_a.o
  .debug_str     0x0000000000000000   0x1b5d4f ./drivers/interrupts_fm4_type_a.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm4_type_a.o
  .group         0x0000000000000000        0xc ./drivers/interrupts_fm4_type_b.o
@@ -4118,7 +4122,7 @@ Discarded input sections
  .debug_abbrev  0x0000000000000000      0x11f ./drivers/interrupts_fm4_type_c.o
  .debug_aranges
                 0x0000000000000000       0x18 ./drivers/interrupts_fm4_type_c.o
- .debug_macro   0x0000000000000000      0x123 ./drivers/interrupts_fm4_type_c.o
+ .debug_macro   0x0000000000000000      0x127 ./drivers/interrupts_fm4_type_c.o
  .debug_macro   0x0000000000000000      0xa90 ./drivers/interrupts_fm4_type_c.o
  .debug_macro   0x0000000000000000      0x877 ./drivers/interrupts_fm4_type_c.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/interrupts_fm4_type_c.o
@@ -4140,7 +4144,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x15c ./drivers/interrupts_fm4_type_c.o
  .debug_macro   0x0000000000000000     0x112c ./drivers/interrupts_fm4_type_c.o
  .debug_macro   0x0000000000000000       0x89 ./drivers/interrupts_fm4_type_c.o
- .debug_line    0x0000000000000000      0x402 ./drivers/interrupts_fm4_type_c.o
+ .debug_line    0x0000000000000000      0x454 ./drivers/interrupts_fm4_type_c.o
  .debug_str     0x0000000000000000   0x1b5d4f ./drivers/interrupts_fm4_type_c.o
  .comment       0x0000000000000000       0x69 ./drivers/interrupts_fm4_type_c.o
  .group         0x0000000000000000        0xc ./drivers/pdl.o
@@ -4186,10 +4190,6 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x174 ./drivers/pdl.o
  .debug_macro   0x0000000000000000       0x22 ./drivers/pdl.o
  .debug_macro   0x0000000000000000      0x15c ./drivers/pdl.o
- .data          0x0000000000000000        0x0 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
- .bss           0x0000000000000000        0x0 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
- .ARM.extab.FM.reset
-                0x0000000000000000        0x0 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
  .group         0x0000000000000000        0xc ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
  .group         0x0000000000000000        0xc ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
  .group         0x0000000000000000        0xc ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
@@ -4571,6 +4571,7 @@ LOAD ./drivers/wdg/swwdg.o
 LOAD ./drivers/wc/wc.o
 LOAD ./drivers/vbat/vbat.o
 LOAD ./drivers/uid/uid.o
+LOAD ./drivers/startup/device/startup_s6e2cc.o
 LOAD ./drivers/sdif/sdif.o
 LOAD ./drivers/rtc/rtc.o
 LOAD ./drivers/reset/reset.o
@@ -4622,7 +4623,6 @@ LOAD ./drivers/interrupts_fm4_type_a.o
 LOAD ./drivers/interrupts_fm4_type_b.o
 LOAD ./drivers/interrupts_fm4_type_c.o
 LOAD ./drivers/pdl.o
-LOAD ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
 LOAD ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
 LOAD /home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/DSP/Lib/GCC/libarm_cortexM4lf_math.a
 LOAD /home/matt/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.7.1/.content/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libstdc++.a
@@ -4655,14 +4655,14 @@ END GROUP
                 0x0000000000000000                __FM_interrupt_vector = __FM_interrupt_vector_cortex_m
  *(.FM.interrupt_vector)
  .FM.interrupt_vector
-                0x0000000000000000      0x240 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
+                0x0000000000000000      0x240 ./drivers/startup/device/startup_s6e2cc.o
                 0x0000000000000000                __FM_interrupt_vector_cortex_m
                 0x0000000000000001                ASSERT ((. != __FM_interrupt_vector_cortex_m), No interrupt vector)
  *(.ROM)
  *(.ROM.b)
                 0x0000000000000240                __FM_reset = __FM_reset_cortex_m
  *(.FM.reset)
- .FM.reset      0x0000000000000240       0x60 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
+ .FM.reset      0x0000000000000240       0x60 ./drivers/startup/device/startup_s6e2cc.o
                 0x0000000000000240                __FM_reset_cortex_m
                 0x0000000000000001                ASSERT ((. != __FM_reset), No reset code)
  *(.text .text.* .gnu.linkonce.t.*)
@@ -4670,182 +4670,182 @@ END GROUP
                 0x00000000000002a0       0x48 ./source/main.o
  .text.main     0x00000000000002e8       0xe0 ./source/main.o
                 0x00000000000002e8                main
+ .text          0x00000000000003c8       0x14 ./drivers/startup/device/startup_s6e2cc.o
+                0x00000000000003c8                NMI_Handler
+                0x00000000000003ca                HardFault_Handler
+                0x00000000000003cc                MemManage_Handler
+                0x00000000000003ce                BusFault_Handler
+                0x00000000000003d0                UsageFault_Handler
+                0x00000000000003d2                SVC_Handler
+                0x00000000000003d4                DebugMon_Handler
+                0x00000000000003d6                PendSV_Handler
+                0x00000000000003d8                SysTick_Handler
+                0x00000000000003da                MFS15_TX_IRQHandler
+                0x00000000000003da                EXINT28_31_IRQHandler
+                0x00000000000003da                EXINT2_IRQHandler
+                0x00000000000003da                LVD_IRQHandler
+                0x00000000000003da                BT9_IRQHandler
+                0x00000000000003da                USB0_F_IRQHandler
+                0x00000000000003da                MFT0_FRT_ZERO_IRQHandler
+                0x00000000000003da                DMAC7_IRQHandler
+                0x00000000000003da                USB0_H_F_IRQHandler
+                0x00000000000003da                MFS4_RX_IRQHandler
+                0x00000000000003da                BT12_15_IRQHandler
+                0x00000000000003da                WC_IRQHandler
+                0x00000000000003da                DMAC6_IRQHandler
+                0x00000000000003da                DMAC4_IRQHandler
+                0x00000000000003da                BT6_IRQHandler
+                0x00000000000003da                MFT0_ICU_IRQHandler
+                0x00000000000003da                MFT2_WFG_DTIF_IRQHandler
+                0x00000000000003da                MFS6_TX_IRQHandler
+                0x00000000000003da                DMAC2_IRQHandler
+                0x00000000000003da                EXINT15_IRQHandler
+                0x00000000000003da                MFS8_TX_IRQHandler
+                0x00000000000003da                ETHER0_IRQHandler
+                0x00000000000003da                MFS3_RX_IRQHandler
+                0x00000000000003da                PPG08_10_12_IRQHandler
+                0x00000000000003da                MFS8_RX_IRQHandler
+                0x00000000000003da                ADC0_IRQHandler
+                0x00000000000003da                MFS9_RX_IRQHandler
+                0x00000000000003da                USB1_H_F_IRQHandler
+                0x00000000000003da                EXINT24_27_IRQHandler
+                0x00000000000003da                MFT2_ICU_IRQHandler
+                0x00000000000003da                MFS12_RX_IRQHandler
+                0x00000000000003da                BT7_IRQHandler
+                0x00000000000003da                PPG00_02_04_IRQHandler
+                0x00000000000003da                BT8_IRQHandler
+                0x00000000000003da                EXINT6_IRQHandler
+                0x00000000000003da                EXINT12_IRQHandler
+                0x00000000000003da                MFS14_TX_IRQHandler
+                0x00000000000003da                EXINT10_IRQHandler
+                0x00000000000003da                IRQ005SEL_IRQHandler
+                0x00000000000003da                ADC1_IRQHandler
+                0x00000000000003da                MFT2_OCU_IRQHandler
+                0x00000000000003da                MFT1_WFG_DTIF_IRQHandler
+                0x00000000000003da                MFS6_RX_IRQHandler
+                0x00000000000003da                MFS11_TX_IRQHandler
+                0x00000000000003da                EXINT0_IRQHandler
+                0x00000000000003da                BT10_IRQHandler
+                0x00000000000003da                RTC_IRQHandler
+                0x00000000000003da                MFS0_RX_IRQHandler
+                0x00000000000003da                TIM_IRQHandler
+                0x00000000000003da                QPRC1_IRQHandler
+                0x00000000000003da                BT3_IRQHandler
+                0x00000000000003da                MFS11_RX_IRQHandler
+                0x00000000000003da                MFS1_RX_IRQHandler
+                0x00000000000003da                DMAC3_IRQHandler
+                0x00000000000003da                EXINT13_IRQHandler
+                0x00000000000003da                IRQ004SEL_IRQHandler
+                0x00000000000003da                DSTC_IRQHandler
+                0x00000000000003da                IRQ007SEL_IRQHandler
+                0x00000000000003da                MFT0_FRT_PEAK_IRQHandler
+                0x00000000000003da                PCRC_I2S0_1_IRQHandler
+                0x00000000000003da                EXINT3_IRQHandler
+                0x00000000000003da                PPG16_18_20_IRQHandler
+                0x00000000000003da                Default_Handler
+                0x00000000000003da                MFS4_TX_IRQHandler
+                0x00000000000003da                MFS13_RX_IRQHandler
+                0x00000000000003da                MFS14_RX_IRQHandler
+                0x00000000000003da                IRQ010SEL_IRQHandler
+                0x00000000000003da                MFT1_FRT_ZERO_IRQHandler
+                0x00000000000003da                EXINT7_IRQHandler
+                0x00000000000003da                EXINT11_IRQHandler
+                0x00000000000003da                ADC2_IRQHandler
+                0x00000000000003da                MFT0_WFG_DTIF_IRQHandler
+                0x00000000000003da                EXINT20_23_IRQHandler
+                0x00000000000003da                MFS2_RX_IRQHandler
+                0x00000000000003da                MFT2_FRT_ZERO_IRQHandler
+                0x00000000000003da                IRQ009SEL_IRQHandler
+                0x00000000000003da                MFS7_TX_IRQHandler
+                0x00000000000003da                BT5_IRQHandler
+                0x00000000000003da                DSTC_HW_IRQHandler
+                0x00000000000003da                QPRC3_IRQHandler
+                0x00000000000003da                MFS13_TX_IRQHandler
+                0x00000000000003da                USB1_F_IRQHandler
+                0x00000000000003da                CAN1_CANFD0_IRQHandler
+                0x00000000000003da                IRQ003SEL_IRQHandler
+                0x00000000000003da                MFS5_TX_IRQHandler
+                0x00000000000003da                EXINT5_IRQHandler
+                0x00000000000003da                EXINT14_IRQHandler
+                0x00000000000003da                FLASHIF_IRQHandler
+                0x00000000000003da                DMAC0_IRQHandler
+                0x00000000000003da                QPRC0_IRQHandler
+                0x00000000000003da                MFS3_TX_IRQHandler
+                0x00000000000003da                EXINT4_IRQHandler
+                0x00000000000003da                CSV_IRQHandler
+                0x00000000000003da                MFS10_RX_IRQHandler
+                0x00000000000003da                DT_IRQHandler
+                0x00000000000003da                MFS1_TX_IRQHandler
+                0x00000000000003da                EXTBUS_ERR_IRQHandler
+                0x00000000000003da                DMAC1_IRQHandler
+                0x00000000000003da                CAN0_IRQHandler
+                0x00000000000003da                MFT1_ICU_IRQHandler
+                0x00000000000003da                MFS10_TX_IRQHandler
+                0x00000000000003da                IRQ008SEL_IRQHandler
+                0x00000000000003da                EXINT8_IRQHandler
+                0x00000000000003da                IRQ006SEL_IRQHandler
+                0x00000000000003da                MFS0_TX_IRQHandler
+                0x00000000000003da                EXINT1_IRQHandler
+                0x00000000000003da                HSSPI_IRQHandler
+                0x00000000000003da                QPRC2_IRQHandler
+                0x00000000000003da                MFT1_OCU_IRQHandler
+                0x00000000000003da                MFS9_TX_IRQHandler
+                0x00000000000003da                MFT1_FRT_PEAK_IRQHandler
+                0x00000000000003da                MFS7_RX_IRQHandler
+                0x00000000000003da                SD_IRQHandler
+                0x00000000000003da                BT4_IRQHandler
+                0x00000000000003da                DMAC5_IRQHandler
+                0x00000000000003da                BT11_IRQHandler
+                0x00000000000003da                EXINT9_IRQHandler
+                0x00000000000003da                SWDT_IRQHandler
+                0x00000000000003da                MFS12_TX_IRQHandler
+                0x00000000000003da                EXINT16_19_IRQHandler
+                0x00000000000003da                MFS15_RX_IRQHandler
+                0x00000000000003da                MFT0_OCU_IRQHandler
+                0x00000000000003da                MFT2_FRT_PEAK_IRQHandler
+                0x00000000000003da                MFS2_TX_IRQHandler
+                0x00000000000003da                MFS5_RX_IRQHandler
  .text.__NVIC_EnableIRQ
-                0x00000000000003c8       0x3c ./drivers/bt/bt.o
+                0x00000000000003dc       0x3c ./drivers/bt/bt.o
  .text.__NVIC_ClearPendingIRQ
-                0x0000000000000404       0x3c ./drivers/bt/bt.o
+                0x0000000000000418       0x3c ./drivers/bt/bt.o
  .text.__NVIC_SetPriority
-                0x0000000000000440       0x54 ./drivers/bt/bt.o
+                0x0000000000000454       0x54 ./drivers/bt/bt.o
  .text.BtGetInternDataPtr
-                0x0000000000000494       0x48 ./drivers/bt/bt.o
+                0x00000000000004a8       0x48 ./drivers/bt/bt.o
  .text.Bt_IrqHandler
-                0x00000000000004dc       0x90 ./drivers/bt/bt.o
-                0x00000000000004dc                Bt_IrqHandler
+                0x00000000000004f0       0x90 ./drivers/bt/bt.o
+                0x00000000000004f0                Bt_IrqHandler
  .text.BtInitNvic
-                0x000000000000056c       0x70 ./drivers/bt/bt.o
+                0x0000000000000580       0x70 ./drivers/bt/bt.o
  .text.Bt_ConfigIOMode
-                0x00000000000005dc       0xf0 ./drivers/bt/bt.o
-                0x00000000000005dc                Bt_ConfigIOMode
+                0x00000000000005f0       0xf0 ./drivers/bt/bt.o
+                0x00000000000005f0                Bt_ConfigIOMode
  .text.Bt_Rt_Init
-                0x00000000000006cc      0x234 ./drivers/bt/bt.o
-                0x00000000000006cc                Bt_Rt_Init
+                0x00000000000006e0      0x234 ./drivers/bt/bt.o
+                0x00000000000006e0                Bt_Rt_Init
  .text.Bt_Rt_EnableCount
-                0x0000000000000900       0x2a ./drivers/bt/bt.o
-                0x0000000000000900                Bt_Rt_EnableCount
+                0x0000000000000914       0x2a ./drivers/bt/bt.o
+                0x0000000000000914                Bt_Rt_EnableCount
  .text.Bt_Rt_EnableSwTrig
-                0x000000000000092a       0x2a ./drivers/bt/bt.o
-                0x000000000000092a                Bt_Rt_EnableSwTrig
+                0x000000000000093e       0x2a ./drivers/bt/bt.o
+                0x000000000000093e                Bt_Rt_EnableSwTrig
  .text.Bt_Rt_WriteCycleVal
-                0x0000000000000954       0x2a ./drivers/bt/bt.o
-                0x0000000000000954                Bt_Rt_WriteCycleVal
- *fill*         0x000000000000097e        0x2 
+                0x0000000000000968       0x2a ./drivers/bt/bt.o
+                0x0000000000000968                Bt_Rt_WriteCycleVal
+ *fill*         0x0000000000000992        0x2 
  .text.BT0_IRQHandler
-                0x0000000000000980       0x18 ./drivers/interrupts_fm4_type_b.o
-                0x0000000000000980                BT0_IRQHandler
+                0x0000000000000994       0x18 ./drivers/interrupts_fm4_type_b.o
+                0x0000000000000994                BT0_IRQHandler
  .text.BT1_IRQHandler
-                0x0000000000000998       0x18 ./drivers/interrupts_fm4_type_b.o
-                0x0000000000000998                BT1_IRQHandler
+                0x00000000000009ac       0x18 ./drivers/interrupts_fm4_type_b.o
+                0x00000000000009ac                BT1_IRQHandler
  .text.BT2_IRQHandler
-                0x00000000000009b0       0x18 ./drivers/interrupts_fm4_type_b.o
-                0x00000000000009b0                BT2_IRQHandler
+                0x00000000000009c4       0x18 ./drivers/interrupts_fm4_type_b.o
+                0x00000000000009c4                BT2_IRQHandler
  .text.pdl_memclr
-                0x00000000000009c8       0x2c ./drivers/pdl.o
-                0x00000000000009c8                pdl_memclr
- .text          0x00000000000009f4       0x14 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
-                0x00000000000009f4                NMI_Handler
-                0x00000000000009f6                HardFault_Handler
-                0x00000000000009f8                MemManage_Handler
-                0x00000000000009fa                BusFault_Handler
-                0x00000000000009fc                UsageFault_Handler
-                0x00000000000009fe                SVC_Handler
-                0x0000000000000a00                DebugMon_Handler
-                0x0000000000000a02                PendSV_Handler
-                0x0000000000000a04                SysTick_Handler
-                0x0000000000000a06                MFS15_TX_IRQHandler
-                0x0000000000000a06                EXINT28_31_IRQHandler
-                0x0000000000000a06                EXINT2_IRQHandler
-                0x0000000000000a06                LVD_IRQHandler
-                0x0000000000000a06                BT9_IRQHandler
-                0x0000000000000a06                USB0_F_IRQHandler
-                0x0000000000000a06                MFT0_FRT_ZERO_IRQHandler
-                0x0000000000000a06                DMAC7_IRQHandler
-                0x0000000000000a06                USB0_H_F_IRQHandler
-                0x0000000000000a06                MFS4_RX_IRQHandler
-                0x0000000000000a06                BT12_15_IRQHandler
-                0x0000000000000a06                WC_IRQHandler
-                0x0000000000000a06                DMAC6_IRQHandler
-                0x0000000000000a06                DMAC4_IRQHandler
-                0x0000000000000a06                BT6_IRQHandler
-                0x0000000000000a06                MFT0_ICU_IRQHandler
-                0x0000000000000a06                MFT2_WFG_DTIF_IRQHandler
-                0x0000000000000a06                MFS6_TX_IRQHandler
-                0x0000000000000a06                DMAC2_IRQHandler
-                0x0000000000000a06                EXINT15_IRQHandler
-                0x0000000000000a06                MFS8_TX_IRQHandler
-                0x0000000000000a06                ETHER0_IRQHandler
-                0x0000000000000a06                MFS3_RX_IRQHandler
-                0x0000000000000a06                PPG08_10_12_IRQHandler
-                0x0000000000000a06                MFS8_RX_IRQHandler
-                0x0000000000000a06                ADC0_IRQHandler
-                0x0000000000000a06                MFS9_RX_IRQHandler
-                0x0000000000000a06                USB1_H_F_IRQHandler
-                0x0000000000000a06                EXINT24_27_IRQHandler
-                0x0000000000000a06                MFT2_ICU_IRQHandler
-                0x0000000000000a06                MFS12_RX_IRQHandler
-                0x0000000000000a06                BT7_IRQHandler
-                0x0000000000000a06                PPG00_02_04_IRQHandler
-                0x0000000000000a06                BT8_IRQHandler
-                0x0000000000000a06                EXINT6_IRQHandler
-                0x0000000000000a06                EXINT12_IRQHandler
-                0x0000000000000a06                MFS14_TX_IRQHandler
-                0x0000000000000a06                EXINT10_IRQHandler
-                0x0000000000000a06                IRQ005SEL_IRQHandler
-                0x0000000000000a06                ADC1_IRQHandler
-                0x0000000000000a06                MFT2_OCU_IRQHandler
-                0x0000000000000a06                MFT1_WFG_DTIF_IRQHandler
-                0x0000000000000a06                MFS6_RX_IRQHandler
-                0x0000000000000a06                MFS11_TX_IRQHandler
-                0x0000000000000a06                EXINT0_IRQHandler
-                0x0000000000000a06                BT10_IRQHandler
-                0x0000000000000a06                RTC_IRQHandler
-                0x0000000000000a06                MFS0_RX_IRQHandler
-                0x0000000000000a06                TIM_IRQHandler
-                0x0000000000000a06                QPRC1_IRQHandler
-                0x0000000000000a06                BT3_IRQHandler
-                0x0000000000000a06                MFS11_RX_IRQHandler
-                0x0000000000000a06                MFS1_RX_IRQHandler
-                0x0000000000000a06                DMAC3_IRQHandler
-                0x0000000000000a06                EXINT13_IRQHandler
-                0x0000000000000a06                IRQ004SEL_IRQHandler
-                0x0000000000000a06                DSTC_IRQHandler
-                0x0000000000000a06                IRQ007SEL_IRQHandler
-                0x0000000000000a06                MFT0_FRT_PEAK_IRQHandler
-                0x0000000000000a06                PCRC_I2S0_1_IRQHandler
-                0x0000000000000a06                EXINT3_IRQHandler
-                0x0000000000000a06                PPG16_18_20_IRQHandler
-                0x0000000000000a06                Default_Handler
-                0x0000000000000a06                MFS4_TX_IRQHandler
-                0x0000000000000a06                MFS13_RX_IRQHandler
-                0x0000000000000a06                MFS14_RX_IRQHandler
-                0x0000000000000a06                IRQ010SEL_IRQHandler
-                0x0000000000000a06                MFT1_FRT_ZERO_IRQHandler
-                0x0000000000000a06                EXINT7_IRQHandler
-                0x0000000000000a06                EXINT11_IRQHandler
-                0x0000000000000a06                ADC2_IRQHandler
-                0x0000000000000a06                MFT0_WFG_DTIF_IRQHandler
-                0x0000000000000a06                EXINT20_23_IRQHandler
-                0x0000000000000a06                MFS2_RX_IRQHandler
-                0x0000000000000a06                MFT2_FRT_ZERO_IRQHandler
-                0x0000000000000a06                IRQ009SEL_IRQHandler
-                0x0000000000000a06                MFS7_TX_IRQHandler
-                0x0000000000000a06                BT5_IRQHandler
-                0x0000000000000a06                DSTC_HW_IRQHandler
-                0x0000000000000a06                QPRC3_IRQHandler
-                0x0000000000000a06                MFS13_TX_IRQHandler
-                0x0000000000000a06                USB1_F_IRQHandler
-                0x0000000000000a06                CAN1_CANFD0_IRQHandler
-                0x0000000000000a06                IRQ003SEL_IRQHandler
-                0x0000000000000a06                MFS5_TX_IRQHandler
-                0x0000000000000a06                EXINT5_IRQHandler
-                0x0000000000000a06                EXINT14_IRQHandler
-                0x0000000000000a06                FLASHIF_IRQHandler
-                0x0000000000000a06                DMAC0_IRQHandler
-                0x0000000000000a06                QPRC0_IRQHandler
-                0x0000000000000a06                MFS3_TX_IRQHandler
-                0x0000000000000a06                EXINT4_IRQHandler
-                0x0000000000000a06                CSV_IRQHandler
-                0x0000000000000a06                MFS10_RX_IRQHandler
-                0x0000000000000a06                DT_IRQHandler
-                0x0000000000000a06                MFS1_TX_IRQHandler
-                0x0000000000000a06                EXTBUS_ERR_IRQHandler
-                0x0000000000000a06                DMAC1_IRQHandler
-                0x0000000000000a06                CAN0_IRQHandler
-                0x0000000000000a06                MFT1_ICU_IRQHandler
-                0x0000000000000a06                MFS10_TX_IRQHandler
-                0x0000000000000a06                IRQ008SEL_IRQHandler
-                0x0000000000000a06                EXINT8_IRQHandler
-                0x0000000000000a06                IRQ006SEL_IRQHandler
-                0x0000000000000a06                MFS0_TX_IRQHandler
-                0x0000000000000a06                EXINT1_IRQHandler
-                0x0000000000000a06                HSSPI_IRQHandler
-                0x0000000000000a06                QPRC2_IRQHandler
-                0x0000000000000a06                MFT1_OCU_IRQHandler
-                0x0000000000000a06                MFS9_TX_IRQHandler
-                0x0000000000000a06                MFT1_FRT_PEAK_IRQHandler
-                0x0000000000000a06                MFS7_RX_IRQHandler
-                0x0000000000000a06                SD_IRQHandler
-                0x0000000000000a06                BT4_IRQHandler
-                0x0000000000000a06                DMAC5_IRQHandler
-                0x0000000000000a06                BT11_IRQHandler
-                0x0000000000000a06                EXINT9_IRQHandler
-                0x0000000000000a06                SWDT_IRQHandler
-                0x0000000000000a06                MFS12_TX_IRQHandler
-                0x0000000000000a06                EXINT16_19_IRQHandler
-                0x0000000000000a06                MFS15_RX_IRQHandler
-                0x0000000000000a06                MFT0_OCU_IRQHandler
-                0x0000000000000a06                MFT2_FRT_PEAK_IRQHandler
-                0x0000000000000a06                MFS2_TX_IRQHandler
-                0x0000000000000a06                MFS5_RX_IRQHandler
+                0x00000000000009dc       0x2c ./drivers/pdl.o
+                0x00000000000009dc                pdl_memclr
  .text.SystemInit
                 0x0000000000000a08      0x140 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
                 0x0000000000000a08                SystemInit
@@ -5001,7 +5001,7 @@ END GROUP
                 0x0000000000001bf0       0x10 ./source/main.o
                                           0x8 (size before relaxing)
  .ARM.exidx.FM.reset
-                0x0000000000001be8        0x8 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
+                0x0000000000001be8        0x8 ./drivers/startup/device/startup_s6e2cc.o
  .ARM.exidx.text.selfrel_offset31
                 0x0000000000001c00        0x0 /home/matt/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.7.1/.content/bin/../lib/gcc/arm-none-eabi/8.2.1/thumb/v7e-m+fp/hard/libgcc.a(unwind-arm.o)
                                           0x8 (size before relaxing)
@@ -5127,14 +5127,14 @@ END GROUP
 
 .heap           0x000000001ffd0470      0x400 load address 0x00000000000020e0
  *(.heap)
- .heap          0x000000001ffd0470      0x400 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
+ .heap          0x000000001ffd0470      0x400 ./drivers/startup/device/startup_s6e2cc.o
                 0x000000001ffd0470                __FM_heap_start
                 0x000000001ffd0870                __FM_heap_end
 
 .stack          0x000000001ffffc00      0x400
  *(.stack)
  *fill*         0x000000001ffffc00        0x0 
- .stack         0x000000001ffffc00      0x400 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
+ .stack         0x000000001ffffc00      0x400 ./drivers/startup/device/startup_s6e2cc.o
                 0x000000001ffffc00                __FM_stack_mem
                 0x0000000000001c80                __FM_region_init_ram = LOADADDR (.data)
                 0x0000000000000460                __FM_region_init_size_ram = (_edata - __FM_region_start_ram)
@@ -5169,45 +5169,45 @@ END GROUP
  .debug_aranges
                 0x0000000000000000       0x28 ./source/main.o
  .debug_aranges
-                0x0000000000000028      0x1d8 ./drivers/bt/bt.o
+                0x0000000000000028       0x28 ./drivers/startup/device/startup_s6e2cc.o
  .debug_aranges
-                0x0000000000000200       0x38 ./drivers/interrupts_fm4_type_b.o
+                0x0000000000000050      0x1d8 ./drivers/bt/bt.o
  .debug_aranges
-                0x0000000000000238       0x28 ./drivers/pdl.o
+                0x0000000000000228       0x38 ./drivers/interrupts_fm4_type_b.o
  .debug_aranges
-                0x0000000000000260       0x28 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
+                0x0000000000000260       0x28 ./drivers/pdl.o
  .debug_aranges
                 0x0000000000000288       0x28 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0x12182
+.debug_info     0x0000000000000000    0x12181
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000     0x5aa0 ./source/main.o
- .debug_info    0x0000000000005aa0     0x3707 ./drivers/bt/bt.o
- .debug_info    0x00000000000091a7      0x6fa ./drivers/interrupts_fm4_type_b.o
- .debug_info    0x00000000000098a1      0x140 ./drivers/pdl.o
- .debug_info    0x00000000000099e1       0x22 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
- .debug_info    0x0000000000009a03     0x877f ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
+ .debug_info    0x0000000000005aa0       0x22 ./drivers/startup/device/startup_s6e2cc.o
+ .debug_info    0x0000000000005ac2     0x3707 ./drivers/bt/bt.o
+ .debug_info    0x00000000000091c9      0x6fa ./drivers/interrupts_fm4_type_b.o
+ .debug_info    0x00000000000098c3      0x140 ./drivers/pdl.o
+ .debug_info    0x0000000000009a03     0x877e ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
 
-.debug_abbrev   0x0000000000000000      0x9ab
+.debug_abbrev   0x0000000000000000      0x9a5
  *(.debug_abbrev)
  .debug_abbrev  0x0000000000000000      0x28a ./source/main.o
- .debug_abbrev  0x000000000000028a      0x30d ./drivers/bt/bt.o
- .debug_abbrev  0x0000000000000597      0x186 ./drivers/interrupts_fm4_type_b.o
- .debug_abbrev  0x000000000000071d       0xa6 ./drivers/pdl.o
- .debug_abbrev  0x00000000000007c3       0x12 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
- .debug_abbrev  0x00000000000007d5      0x1d6 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
+ .debug_abbrev  0x000000000000028a       0x12 ./drivers/startup/device/startup_s6e2cc.o
+ .debug_abbrev  0x000000000000029c      0x30d ./drivers/bt/bt.o
+ .debug_abbrev  0x00000000000005a9      0x186 ./drivers/interrupts_fm4_type_b.o
+ .debug_abbrev  0x000000000000072f       0xa6 ./drivers/pdl.o
+ .debug_abbrev  0x00000000000007d5      0x1d0 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
 
-.debug_line     0x0000000000000000     0x261d
+.debug_line     0x0000000000000000     0x27ab
  *(.debug_line)
- .debug_line    0x0000000000000000      0x6b4 ./source/main.o
- .debug_line    0x00000000000006b4     0x11d2 ./drivers/bt/bt.o
- .debug_line    0x0000000000001886      0x468 ./drivers/interrupts_fm4_type_b.o
- .debug_line    0x0000000000001cee      0x3a3 ./drivers/pdl.o
- .debug_line    0x0000000000002091       0xa3 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
- .debug_line    0x0000000000002134      0x4e9 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
+ .debug_line    0x0000000000000000      0x6f2 ./source/main.o
+ .debug_line    0x00000000000006f2       0xa4 ./drivers/startup/device/startup_s6e2cc.o
+ .debug_line    0x0000000000000796     0x123a ./drivers/bt/bt.o
+ .debug_line    0x00000000000019d0      0x4ba ./drivers/interrupts_fm4_type_b.o
+ .debug_line    0x0000000000001e8a      0x3bd ./drivers/pdl.o
+ .debug_line    0x0000000000002247      0x564 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
 
 .debug_frame    0x0000000000000000      0xa28
  *(.debug_frame)
@@ -5217,19 +5217,19 @@ END GROUP
  .debug_frame   0x0000000000000978       0x58 ./drivers/pdl.o
  .debug_frame   0x00000000000009d0       0x58 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
 
-.debug_str      0x0000000000000000   0x1c2e7c
+.debug_str      0x0000000000000000   0x1c2e7d
  *(.debug_str)
  .debug_str     0x0000000000000000   0x1bde64 ./source/main.o
                                      0x1be1cf (size before relaxing)
- .debug_str     0x00000000001bde64     0x1d19 ./drivers/bt/bt.o
+ .debug_str     0x00000000001bde64       0x3a ./drivers/startup/device/startup_s6e2cc.o
+                                         0x67 (size before relaxing)
+ .debug_str     0x00000000001bde9e     0x1d19 ./drivers/bt/bt.o
                                      0x1b7d44 (size before relaxing)
- .debug_str     0x00000000001bfb7d       0xe2 ./drivers/interrupts_fm4_type_b.o
+ .debug_str     0x00000000001bfbb7       0xe2 ./drivers/interrupts_fm4_type_b.o
                                      0x1b5df8 (size before relaxing)
- .debug_str     0x00000000001bfc5f       0x43 ./drivers/pdl.o
+ .debug_str     0x00000000001bfc99       0x43 ./drivers/pdl.o
                                      0x1b000f (size before relaxing)
- .debug_str     0x00000000001bfca2       0x39 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
-                                         0x66 (size before relaxing)
- .debug_str     0x00000000001bfcdb     0x31a1 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
+ .debug_str     0x00000000001bfcdc     0x31a1 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
                                      0x1b2b67 (size before relaxing)
 
 .debug_loc
@@ -5299,109 +5299,109 @@ END GROUP
  .ARM.attributes
                 0x000000000000042d       0x39 ./drivers/uid/uid.o
  .ARM.attributes
-                0x0000000000000466       0x39 ./drivers/sdif/sdif.o
+                0x0000000000000466       0x20 ./drivers/startup/device/startup_s6e2cc.o
  .ARM.attributes
-                0x000000000000049f       0x39 ./drivers/rtc/rtc.o
+                0x0000000000000486       0x39 ./drivers/sdif/sdif.o
  .ARM.attributes
-                0x00000000000004d8       0x39 ./drivers/reset/reset.o
+                0x00000000000004bf       0x39 ./drivers/rtc/rtc.o
  .ARM.attributes
-                0x0000000000000511       0x39 ./drivers/rc/rc.o
+                0x00000000000004f8       0x39 ./drivers/reset/reset.o
  .ARM.attributes
-                0x000000000000054a       0x39 ./drivers/qprc/qprc.o
+                0x0000000000000531       0x39 ./drivers/rc/rc.o
  .ARM.attributes
-                0x0000000000000583       0x39 ./drivers/ppg/ppg.o
+                0x000000000000056a       0x39 ./drivers/qprc/qprc.o
  .ARM.attributes
-                0x00000000000005bc       0x39 ./drivers/pcrc/pcrc.o
+                0x00000000000005a3       0x39 ./drivers/ppg/ppg.o
  .ARM.attributes
-                0x00000000000005f5       0x39 ./drivers/mft/mft_adcmp.o
+                0x00000000000005dc       0x39 ./drivers/pcrc/pcrc.o
  .ARM.attributes
-                0x000000000000062e       0x39 ./drivers/mft/mft_frt.o
+                0x0000000000000615       0x39 ./drivers/mft/mft_adcmp.o
  .ARM.attributes
-                0x0000000000000667       0x39 ./drivers/mft/mft_icu.o
+                0x000000000000064e       0x39 ./drivers/mft/mft_frt.o
  .ARM.attributes
-                0x00000000000006a0       0x39 ./drivers/mft/mft_ocu.o
+                0x0000000000000687       0x39 ./drivers/mft/mft_icu.o
  .ARM.attributes
-                0x00000000000006d9       0x39 ./drivers/mft/mft_wfg.o
+                0x00000000000006c0       0x39 ./drivers/mft/mft_ocu.o
  .ARM.attributes
-                0x0000000000000712       0x34 ./drivers/mfs/mfs.o
+                0x00000000000006f9       0x39 ./drivers/mft/mft_wfg.o
  .ARM.attributes
-                0x0000000000000746       0x39 ./drivers/lvd/lvd.o
+                0x0000000000000732       0x34 ./drivers/mfs/mfs.o
  .ARM.attributes
-                0x000000000000077f       0x39 ./drivers/lpm/lpm.o
+                0x0000000000000766       0x39 ./drivers/lvd/lvd.o
  .ARM.attributes
-                0x00000000000007b8       0x39 ./drivers/lcd/lcd.o
+                0x000000000000079f       0x39 ./drivers/lpm/lpm.o
  .ARM.attributes
-                0x00000000000007f1       0x39 ./drivers/icc/icc.o
+                0x00000000000007d8       0x39 ./drivers/lcd/lcd.o
  .ARM.attributes
-                0x000000000000082a       0x39 ./drivers/i2s/i2s.o
+                0x0000000000000811       0x39 ./drivers/icc/icc.o
  .ARM.attributes
-                0x0000000000000863       0x39 ./drivers/i2cs/i2cs.o
+                0x000000000000084a       0x39 ./drivers/i2s/i2s.o
  .ARM.attributes
-                0x000000000000089c       0x39 ./drivers/hsspi/hsspi.o
+                0x0000000000000883       0x39 ./drivers/i2cs/i2cs.o
  .ARM.attributes
-                0x00000000000008d5       0x39 ./drivers/hbif/hbif.o
+                0x00000000000008bc       0x39 ./drivers/hsspi/hsspi.o
  .ARM.attributes
-                0x000000000000090e       0x39 ./drivers/flash/dualflash.o
+                0x00000000000008f5       0x39 ./drivers/hbif/hbif.o
  .ARM.attributes
-                0x0000000000000947       0x39 ./drivers/flash/mainflash.o
+                0x000000000000092e       0x39 ./drivers/flash/dualflash.o
  .ARM.attributes
-                0x0000000000000980       0x39 ./drivers/flash/workflash.o
+                0x0000000000000967       0x39 ./drivers/flash/mainflash.o
  .ARM.attributes
-                0x00000000000009b9       0x39 ./drivers/extif/extif.o
+                0x00000000000009a0       0x39 ./drivers/flash/workflash.o
  .ARM.attributes
-                0x00000000000009f2       0x39 ./drivers/exint/exint.o
+                0x00000000000009d9       0x39 ./drivers/extif/extif.o
  .ARM.attributes
-                0x0000000000000a2b       0x39 ./drivers/dt/dt.o
+                0x0000000000000a12       0x39 ./drivers/exint/exint.o
  .ARM.attributes
-                0x0000000000000a64       0x39 ./drivers/dstc/dstc.o
+                0x0000000000000a4b       0x39 ./drivers/dt/dt.o
  .ARM.attributes
-                0x0000000000000a9d       0x39 ./drivers/dma/dma.o
+                0x0000000000000a84       0x39 ./drivers/dstc/dstc.o
  .ARM.attributes
-                0x0000000000000ad6       0x39 ./drivers/dac/dac.o
+                0x0000000000000abd       0x39 ./drivers/dma/dma.o
  .ARM.attributes
-                0x0000000000000b0f       0x39 ./drivers/csv/csv.o
+                0x0000000000000af6       0x39 ./drivers/dac/dac.o
  .ARM.attributes
-                0x0000000000000b48       0x39 ./drivers/crc/crc.o
+                0x0000000000000b2f       0x39 ./drivers/csv/csv.o
  .ARM.attributes
-                0x0000000000000b81       0x39 ./drivers/cr/cr.o
+                0x0000000000000b68       0x39 ./drivers/crc/crc.o
  .ARM.attributes
-                0x0000000000000bba       0x39 ./drivers/clk/clk.o
+                0x0000000000000ba1       0x39 ./drivers/cr/cr.o
  .ARM.attributes
-                0x0000000000000bf3       0x39 ./drivers/can/can.o
+                0x0000000000000bda       0x39 ./drivers/clk/clk.o
  .ARM.attributes
-                0x0000000000000c2c       0x39 ./drivers/can/can_pre.o
+                0x0000000000000c13       0x39 ./drivers/can/can.o
  .ARM.attributes
-                0x0000000000000c65       0x39 ./drivers/can/canfd.o
+                0x0000000000000c4c       0x39 ./drivers/can/can_pre.o
  .ARM.attributes
-                0x0000000000000c9e       0x34 ./drivers/bt/bt.o
+                0x0000000000000c85       0x39 ./drivers/can/canfd.o
  .ARM.attributes
-                0x0000000000000cd2       0x39 ./drivers/adc/adc.o
+                0x0000000000000cbe       0x34 ./drivers/bt/bt.o
  .ARM.attributes
-                0x0000000000000d0b       0x39 ./drivers/interrupts_fm0p_type_1-a.o
+                0x0000000000000cf2       0x39 ./drivers/adc/adc.o
  .ARM.attributes
-                0x0000000000000d44       0x39 ./drivers/interrupts_fm0p_type_1-b.o
+                0x0000000000000d2b       0x39 ./drivers/interrupts_fm0p_type_1-a.o
  .ARM.attributes
-                0x0000000000000d7d       0x39 ./drivers/interrupts_fm0p_type_2-a.o
+                0x0000000000000d64       0x39 ./drivers/interrupts_fm0p_type_1-b.o
  .ARM.attributes
-                0x0000000000000db6       0x39 ./drivers/interrupts_fm0p_type_2-b.o
+                0x0000000000000d9d       0x39 ./drivers/interrupts_fm0p_type_2-a.o
  .ARM.attributes
-                0x0000000000000def       0x39 ./drivers/interrupts_fm0p_type_3.o
+                0x0000000000000dd6       0x39 ./drivers/interrupts_fm0p_type_2-b.o
  .ARM.attributes
-                0x0000000000000e28       0x39 ./drivers/interrupts_fm3_type_a.o
+                0x0000000000000e0f       0x39 ./drivers/interrupts_fm0p_type_3.o
  .ARM.attributes
-                0x0000000000000e61       0x39 ./drivers/interrupts_fm3_type_b.o
+                0x0000000000000e48       0x39 ./drivers/interrupts_fm3_type_a.o
  .ARM.attributes
-                0x0000000000000e9a       0x39 ./drivers/interrupts_fm3_type_c.o
+                0x0000000000000e81       0x39 ./drivers/interrupts_fm3_type_b.o
  .ARM.attributes
-                0x0000000000000ed3       0x39 ./drivers/interrupts_fm4_type_a.o
+                0x0000000000000eba       0x39 ./drivers/interrupts_fm3_type_c.o
  .ARM.attributes
-                0x0000000000000f0c       0x34 ./drivers/interrupts_fm4_type_b.o
+                0x0000000000000ef3       0x39 ./drivers/interrupts_fm4_type_a.o
  .ARM.attributes
-                0x0000000000000f40       0x39 ./drivers/interrupts_fm4_type_c.o
+                0x0000000000000f2c       0x34 ./drivers/interrupts_fm4_type_b.o
  .ARM.attributes
-                0x0000000000000f79       0x34 ./drivers/pdl.o
+                0x0000000000000f60       0x39 ./drivers/interrupts_fm4_type_c.o
  .ARM.attributes
-                0x0000000000000fad       0x20 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
+                0x0000000000000f99       0x34 ./drivers/pdl.o
  .ARM.attributes
                 0x0000000000000fcd       0x34 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
  .ARM.attributes
@@ -5465,30 +5465,30 @@ OUTPUT(Blinky.elf elf32-littlearm)
 
 .debug_ranges   0x0000000000000000      0x258
  .debug_ranges  0x0000000000000000       0x18 ./source/main.o
- .debug_ranges  0x0000000000000018      0x1c8 ./drivers/bt/bt.o
- .debug_ranges  0x00000000000001e0       0x28 ./drivers/interrupts_fm4_type_b.o
- .debug_ranges  0x0000000000000208       0x18 ./drivers/pdl.o
- .debug_ranges  0x0000000000000220       0x20 ./RTE/Device/S6E2CCAJ0A/startup_s6e2cc.o
+ .debug_ranges  0x0000000000000018       0x20 ./drivers/startup/device/startup_s6e2cc.o
+ .debug_ranges  0x0000000000000038      0x1c8 ./drivers/bt/bt.o
+ .debug_ranges  0x0000000000000200       0x28 ./drivers/interrupts_fm4_type_b.o
+ .debug_ranges  0x0000000000000228       0x18 ./drivers/pdl.o
  .debug_ranges  0x0000000000000240       0x18 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
 
-.debug_macro    0x0000000000000000     0x2e69
- .debug_macro   0x0000000000000000      0x2d4 ./source/main.o
- .debug_macro   0x00000000000002d4      0xb50 ./source/main.o
- .debug_macro   0x0000000000000e24       0x1c ./source/main.o
- .debug_macro   0x0000000000000e40     0x1011 ./source/main.o
- .debug_macro   0x0000000000001e51      0x17b ./source/main.o
- .debug_macro   0x0000000000001fcc       0x89 ./source/main.o
- .debug_macro   0x0000000000002055       0x34 ./source/main.o
- .debug_macro   0x0000000000002089       0x35 ./source/main.o
- .debug_macro   0x00000000000020be      0x356 ./source/main.o
- .debug_macro   0x0000000000002414       0x43 ./source/main.o
- .debug_macro   0x0000000000002457      0x137 ./source/main.o
- .debug_macro   0x000000000000258e       0x10 ./source/main.o
- .debug_macro   0x000000000000259e      0x4cc ./source/main.o
- .debug_macro   0x0000000000002a6a      0x115 ./drivers/bt/bt.o
- .debug_macro   0x0000000000002b7f      0x123 ./drivers/interrupts_fm4_type_b.o
- .debug_macro   0x0000000000002ca2       0xf7 ./drivers/pdl.o
- .debug_macro   0x0000000000002d99       0xd0 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
+.debug_macro    0x0000000000000000     0x2e83
+ .debug_macro   0x0000000000000000      0x2e6 ./source/main.o
+ .debug_macro   0x00000000000002e6      0xb50 ./source/main.o
+ .debug_macro   0x0000000000000e36       0x1c ./source/main.o
+ .debug_macro   0x0000000000000e52     0x1011 ./source/main.o
+ .debug_macro   0x0000000000001e63      0x17b ./source/main.o
+ .debug_macro   0x0000000000001fde       0x89 ./source/main.o
+ .debug_macro   0x0000000000002067       0x34 ./source/main.o
+ .debug_macro   0x000000000000209b       0x35 ./source/main.o
+ .debug_macro   0x00000000000020d0      0x356 ./source/main.o
+ .debug_macro   0x0000000000002426       0x43 ./source/main.o
+ .debug_macro   0x0000000000002469      0x137 ./source/main.o
+ .debug_macro   0x00000000000025a0       0x10 ./source/main.o
+ .debug_macro   0x00000000000025b0      0x4cc ./source/main.o
+ .debug_macro   0x0000000000002a7c      0x119 ./drivers/bt/bt.o
+ .debug_macro   0x0000000000002b95      0x127 ./drivers/interrupts_fm4_type_b.o
+ .debug_macro   0x0000000000002cbc       0xf7 ./drivers/pdl.o
+ .debug_macro   0x0000000000002db3       0xd0 ./RTE/Device/S6E2CCAJ0A/system_s6e2cc.o
 
 .comment        0x0000000000000000       0x68
  .comment       0x0000000000000000       0x68 ./source/main.o

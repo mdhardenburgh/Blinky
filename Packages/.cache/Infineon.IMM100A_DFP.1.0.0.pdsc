@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2019 sp2 (x64) (http://www.altova.com) by Infineon Technologies (Infineon Technologies AG) -->
+<package schemaVersion="1.3" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="../PACK.xsd">
+	<license>License/CMSIS_END_USER_LICENSE_AGREEMENT.txt</license>
+	<vendor>Infineon</vendor>
+	<url>https://www.infineon.com/cmsis_packs/IMM100A/</url>
+	<name>IMM100A_DFP</name>
+	<description>Infineon iMOTION Platform: Device Support, Drivers and Examples</description>
+	<supportContact>http://www.infineon.com/cms/en/corporate/company/contact/support/index.html</supportContact>
+	<releases>
+		<release version="1.0.0" date="2019-07-12">iMOTION Device Family Pack for IMM100A.</release>
+	</releases>
+	<keywords>
+		<!-- keywords for indexing -->
+		<keyword>Infineon</keyword>
+		<keyword>Device Support</keyword>
+		<keyword>Device Family Package Infineon</keyword>
+		<keyword>iMOTION</keyword>
+		<keyword>IMM</keyword>
+		<keyword>MCE</keyword>
+		<keyword>Motion Control Engine</keyword>
+		<keyword>smart IPM</keyword>
+	</keywords>
+	<devices>
+		<family Dfamily="iMOTION" Dvendor="Infineon:7">
+			<description>
+        iMOTION™ ICs integrate all the control and analog interface functions required for sensor less field oriented control (FOC) of PM motors using DC link or leg shunt current measurements.
+      </description>
+			<environment name="uv">
+				<CMisc>--C99</CMisc>
+			</environment>
+			<environment name="uv">
+				<AMisc>--cpreproc</AMisc>
+			</environment>
+			<!-- ******************************  subFamily IMM100  ****************************** -->
+			<subFamily DsubFamily="IMM100 Series">
+				<processor Dcore="Cortex-M0" DcoreVersion="r0p0" Dfpu="NO_FPU" Dmpu="NO_MPU" Dendian="Little-endian" Dclock="48000000"/>
+				<debugconfig default="swd" clock="10000000" swj="0"/>
+				<description>
+	        The IMM100 is a family of fully integrated, programmable high-voltage motor drive modules, designed for high performance, 
+	        high-efficiency PMSM/BLDC motor drive applications such as fans, pumps and compressors. It integrates controller, 
+	        gate driver and six power MOSFETs in a single package.
+	      </description>
+				<!-- ******************************  IMM100A_0128 ****************************** -->
+				<device Dname="IMM100A_0128">
+					<compile header="Device/IMM100_series/Include/IMM100A.h" define="IMM100A_0128"/>
+					<debug svd="SVD/IMM100A.svd"/>
+					<memory id="IROM1" start="0x10001000" size="0x20000" startup="1" default="1"/>
+					<memory id="IRAM1" start="0x20000000" size="0x3FFC" init="0" default="1"/>
+					<algorithm name="Flash/IMM100_128.FLM" start="0x10001000" size="0x20000" default="1"/>
+					<feature type="Memory" n="131072" name="FLASH"/>
+					<feature type="Memory" n="16384" name="RAM"/>
+					<feature type="Other" n="1" name="MCE Motion Control Engine"/>
+					<book name="Documents/Infineon-IMM100A-DS-v01_01-EN.pdf" title="IMM100A Datasheet V1.1"/>
+					<book name="Documents/Infineon-IMM100A-RM-v01_00-EN.pdf" title="IMM100A Reference Manual V1.0"/>
+					<book name="Documents/DDI0432C_cortex_m0_r0p0_trm.pdf" title="Cortex-M0 Technical Reference Manual"/>
+					<book name="Documents/dui0497a_cortex_m0_r0p0_generic_ug.pdf" title="Cortex-M0 Generic User Guide"/>
+				</device>
+			</subFamily>
+		</family>
+	</devices>
+	<conditions>
+		<!-- conditions are dependency rules that can apply to a component or an individual file -->
+		<condition id="IMM100">
+			<description>Infineon IMM100 series</description>
+			<accept condition="CORTEX_M0 ARM"/>
+			<require condition="CMSIS"/>
+		</condition>
+		<condition id="CORTEX_M0 ARM">
+			<description>Infineon iMOTION IMM1xx series and ARMCC compiler</description>
+			<accept condition="IMM100A_0128"/>
+			<require Tcompiler="ARMCC"/>
+		</condition>
+		<condition id="IMM100A_0128">
+			<description>Infineon IMM100A-0xxM</description>
+			<accept Dvendor="Infineon:7" Dname="IMM100A_0128"/>
+		</condition>
+		<condition id="CMSIS">
+			<description>Startup and Core</description>
+			<require Cclass="CMSIS" Cgroup="CORE"/>
+			<require Cclass="Device" Cgroup="Startup"/>
+		</condition>
+		<condition id="IMC_PLIB">
+			<description>iMOTION™ Controller Peripheral Library</description>
+			<require Cclass="Device" Cgroup="IMC_PLIB"/>
+		</condition>
+	</conditions>
+	<components>
+		<component Cclass="Device" Cgroup="Startup" Cversion="1.0.0" condition="IMM100A_0128">
+			<description>System Startup for Infineon iMOTION IMM100 series</description>
+			<files>
+				<!--  include folder -->
+				<file category="include" name="Device/IMM100_series/Include/"/>
+				<!-- startup files -->
+				<file category="source" name="Device/IMM100_series/Source/ARM/startup_IMM100.s" attr="config" version="1.0.0" condition="CORTEX_M0 ARM"/>
+				<!-- system file -->
+				<file category="source" name="Device/IMM100_series/Source/system_IMM100A.c" attr="config" version="1.1.0" condition="CORTEX_M0 ARM"/>
+			</files>
+		</component>
+		<component Cclass="Device" Cgroup="IMC_PLIB" Cversion="1.0.0" condition="IMC_PLIB">
+			<description>Peripheral Library Infineon iMOTION IMM100A series</description>
+			<files>
+				<!--  include folder -->
+				<file category="include" name="Device/IMM100_series/Lib/Include/" version="1.0.0" condition="IMC_PLIB"/>
+			</files>
+		</component>
+	</components>
+</package>

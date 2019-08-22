@@ -27,7 +27,6 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-RTE/CMSIS \
 RTE/Device/S6E2CCAJ0A \
 drivers/adc \
 drivers/bt \
@@ -61,6 +60,7 @@ drivers/rc \
 drivers/reset \
 drivers/rtc \
 drivers/sdif \
+drivers/startup/device \
 drivers/uid \
 drivers/vbat \
 drivers/wc \

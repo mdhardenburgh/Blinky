@@ -1,51 +1,33 @@
 utilities/seg_lcd/cl010/cl010.o: ../utilities/seg_lcd/cl010/cl010.c \
- /home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/gpio/gpio.h \
- /home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/base_types.h \
- /home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/lcd/lcd.h \
- /home/matt/repos/Blinky/eclipseProject/RTE/Device/S6E2CCAJ0A/mcu.h \
- /home/matt/repos/Blinky/eclipseProject/RTE/Device/S6E2CCAJ0A/s6e2ccxj.h \
- /home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/core_cm4.h \
- /home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/cmsis_version.h \
- /home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/cmsis_compiler.h \
- /home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/cmsis_gcc.h \
- /home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/mpu_armv7.h \
- /home/matt/repos/Blinky/eclipseProject/RTE/Device/S6E2CCAJ0A/system_s6e2cc.h \
- /home/matt/repos/Blinky/eclipseProject/RTE/Device/S6E2CCAJ0A/gpio_s6e2ccxj.h \
- /home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/pdl_user.h \
- /home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/pdl.h \
- /home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/base_types.h \
+ /home/matt/repos/Blinky/eclipseProject/drivers/gpio/gpio.h \
+ /home/matt/repos/Blinky/eclipseProject/drivers/base_types.h \
+ /home/matt/repos/Blinky/eclipseProject/drivers/lcd/lcd.h \
+ /home/matt/repos/Blinky/eclipseProject/drivers/pdl_user.h \
+ /home/matt/repos/Blinky/eclipseProject/drivers/pdl.h \
+ /home/matt/repos/Blinky/eclipseProject/drivers/startup/device/mcu.h \
+ /home/matt/repos/Blinky/eclipseProject/drivers/startup/device/s6e2ccxj.h \
+ /home/matt/repos/Blinky/eclipseProject/drivers/startup/device/gpio_s6e2ccxj.h \
+ /home/matt/repos/Blinky/eclipseProject/drivers/base_types.h \
  ../utilities/seg_lcd/cl010/cl010.h \
  ../utilities/seg_lcd/cl010/cl010_config.h
 
-/home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/gpio/gpio.h:
+/home/matt/repos/Blinky/eclipseProject/drivers/gpio/gpio.h:
 
-/home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/base_types.h:
+/home/matt/repos/Blinky/eclipseProject/drivers/base_types.h:
 
-/home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/lcd/lcd.h:
+/home/matt/repos/Blinky/eclipseProject/drivers/lcd/lcd.h:
 
-/home/matt/repos/Blinky/eclipseProject/RTE/Device/S6E2CCAJ0A/mcu.h:
+/home/matt/repos/Blinky/eclipseProject/drivers/pdl_user.h:
 
-/home/matt/repos/Blinky/eclipseProject/RTE/Device/S6E2CCAJ0A/s6e2ccxj.h:
+/home/matt/repos/Blinky/eclipseProject/drivers/pdl.h:
 
-/home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/core_cm4.h:
+/home/matt/repos/Blinky/eclipseProject/drivers/startup/device/mcu.h:
 
-/home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/cmsis_version.h:
+/home/matt/repos/Blinky/eclipseProject/drivers/startup/device/s6e2ccxj.h:
 
-/home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/cmsis_compiler.h:
+/home/matt/repos/Blinky/eclipseProject/drivers/startup/device/gpio_s6e2ccxj.h:
 
-/home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/cmsis_gcc.h:
-
-/home/matt/Packages/ARM/CMSIS/5.6.0/CMSIS/Core/Include/mpu_armv7.h:
-
-/home/matt/repos/Blinky/eclipseProject/RTE/Device/S6E2CCAJ0A/system_s6e2cc.h:
-
-/home/matt/repos/Blinky/eclipseProject/RTE/Device/S6E2CCAJ0A/gpio_s6e2ccxj.h:
-
-/home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/pdl_user.h:
-
-/home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/pdl.h:
-
-/home/matt/softwareDefinedRadio/embedded/test/Blinky/drivers/base_types.h:
+/home/matt/repos/Blinky/eclipseProject/drivers/base_types.h:
 
 ../utilities/seg_lcd/cl010/cl010.h:
 
